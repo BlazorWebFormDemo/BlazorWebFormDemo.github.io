@@ -1,0 +1,17 @@
+﻿@inherits ControlComponent
+
+<asp.LinkButton Text="Click Me"
+                FontNames="Verdana"
+                FontSize="14pt"
+                OnClick="this.LinkButton_Click" />
+<br />
+<asp.Label @ref="this.label" />
+
+@code {
+    private Label label;
+
+    protected void LinkButton_Click(object sender, EventArgs e)
+    {
+        label.Text = "You clicked the link button";
+    }
+}

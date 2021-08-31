@@ -1,0 +1,83 @@
+﻿@inherits ControlComponent
+
+<asp.Panel @ref="this.panel"
+           BackColor="gainsboro"
+           Height="200px"
+           Width="300px"
+           ScrollBars="ScrollBars.Auto">
+    Panel: Here is some static content...
+    <br />
+</asp.Panel>
+
+<br />
+
+Generate Labels:
+<asp.DropDownList @ref="this.dropDown1">
+    <asp.ListItem Value="0">0</asp.ListItem>
+    <asp.ListItem Value="1">1</asp.ListItem>
+    <asp.ListItem Value="2">2</asp.ListItem>
+    <asp.ListItem Value="3">3</asp.ListItem>
+    <asp.ListItem Value="4">4</asp.ListItem>
+</asp.DropDownList>
+
+<br />
+
+Generate TextBoxes:
+<asp.DropDownList @ref="this.dropDown2">
+    <asp.ListItem Value="0">0</asp.ListItem>
+    <asp.ListItem Value="1">1</asp.ListItem>
+    <asp.ListItem Value="2">2</asp.ListItem>
+    <asp.ListItem Value="3">3</asp.ListItem>
+    <asp.ListItem Value="4">4</asp.ListItem>
+</asp.DropDownList>
+
+<br />
+<asp.CheckBox @ref="this.checkBox" Text="Hide Panel" />
+
+<br />
+<asp.Button Text="Refresh Panel"
+            OnClick="this.ButtonClick" />
+
+@code {
+    private Panel panel;
+    private DropDownList dropDown1;
+    private DropDownList dropDown2;
+    private CheckBox checkBox;
+
+    protected void ButtonClick(object sender, EventArgs e)
+    {
+        // Show or hide the Panel contents.
+        if (checkBox.Checked)
+        {
+            panel.Visible = false;
+        }
+        else
+        {
+            panel.Visible = true;
+        }
+        // Remove the last time generated controls.
+        foreach (Control control in panel.Controls.Cast<Control>()
+            .Where(a => a is Label || a is TextBox || a is LiteralControl).ToArray())
+        {
+            panel.Controls.Remove(control);
+        }
+        // Generate the Label controls.
+        int numlabels = Int32.Parse(dropDown1.SelectedItem.Value);
+        for (int i = 1; i <= numlabels; i++)
+        {
+            Label label = new Label();
+            label.Text = "Label" + (i).ToString();
+            panel.Controls.Add(label);
+            panel.Controls.Add(new LiteralControl("<br />"));
+        }
+        // Generate the Textbox controls.
+        int numtexts = Int32.Parse(dropDown2.SelectedItem.Value);
+        for (int i = 1; i <= numtexts; i++)
+        {
+            TextBox textBox = new TextBox();
+            textBox.Text = "TextBox" + (i).ToString();
+            panel.Controls.Add(textBox);
+            panel.Controls.Add(new LiteralControl("<br />"));
+        }
+    }
+}

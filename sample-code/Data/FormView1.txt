@@ -1,0 +1,55 @@
+﻿@inherits ControlComponent
+@inject HttpClient Http
+
+<asp.FormView DataSourceID="EmployeeSource"
+              AllowPaging="true"
+              DataKeyNames="EmployeeID">
+    <ItemTemplate TItem="Employee">
+        <table>
+            <tr>
+                <td>
+                    <asp.Image ImageUrl="@("img/" + context.PhotoPath)"
+                               AlternateText="@context.LastName" />
+                </td>
+                <td>
+                    <h3>@context.FirstName @context.LastName</h3>
+                    @context.Title
+                </td>
+            </tr>
+        </table>
+    </ItemTemplate>
+    <PagerSettings Position="PagerPosition.Bottom"
+                   Mode="PagerButtons.NextPrevious" />
+</asp.FormView>
+
+<asp.FreeDataSource ID="EmployeeSource" OnExecuteSelected="sender => this.employees" />
+
+@code {
+    private Employee[] employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await Http.GetFromJsonAsync<Employee[]>("sample-data/employees.json");
+    }
+
+    public class Employee
+    {
+        public int EmployeeID { get; set; }
+
+        public string LastName { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string Title { get; set; }
+
+        public string Address { get; set; }
+
+        public string City { get; set; }
+
+        public string CountryRegion { get; set; }
+
+        public string Phone { get; set; }
+
+        public string PhotoPath { get; set; }
+    }
+}

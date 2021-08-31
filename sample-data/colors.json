@@ -1,0 +1,22 @@
+[
+  {
+    "ColorTextField": "White",
+    "ColorValueField": "White"
+  },
+  {
+    "ColorTextField": "Silver",
+    "ColorValueField": "Silver"
+  },
+  {
+    "ColorTextField": "Dark Gray",
+    "ColorValueField": "DarkGray"
+  },
+  {
+    "ColorTextField": "Khaki",
+    "ColorValueField": "Khaki"
+  },
+  {
+    "ColorTextField": "Dark Khaki",
+    "ColorValueField": "DarkKhaki"
+  }
+]

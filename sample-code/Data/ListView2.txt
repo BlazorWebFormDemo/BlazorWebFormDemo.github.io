@@ -1,0 +1,153 @@
+﻿@using System.Collections
+@inherits ControlComponent
+@inject HttpClient Http
+
+<table cellpadding="2" border="1">
+    <tr>
+        <th></th>
+        <th>CompanyName</th>
+        <th>ContactName</th>
+        <th>JobTitle</th>
+        <th>Phone</th>
+    </tr>
+    <asp.ListView DataSourceID="CustomersSource"
+                  DataKeyNames="CustomerID"
+                  ConvertEmptyStringToNull="true"
+                  InsertItemPosition="InsertItemPosition.LastItem">
+        <ItemTemplate TItem="Customer">
+            <tr style="white-space: nowrap;">
+                <td>
+                    <asp.Button Text="Select" CommandName="Select" />
+                    <asp.Button Text="Edit" CommandName="Edit" />
+                </td>
+                <td>
+                    @context.CompanyName
+                </td>
+                <td>
+                    @context.ContactName
+                </td>
+                <td>
+                    @context.JobTitle
+                </td>
+                <td>
+                    @context.Phone
+                </td>
+            </tr>
+        </ItemTemplate>
+        <SelectedItemTemplate TItem="Customer">
+            <tr style="background-color: #9ACD32; white-space: nowrap;">
+                <td>
+                    <asp.Button Text="Delete" CommandName="Delete" />
+                    <asp.Button Text="Edit" CommandName="Edit" />
+                </td>
+                <td>
+                    @context.CompanyName
+                </td>
+                <td>
+                    @context.ContactName
+                </td>
+                <td>
+                    @context.JobTitle
+                </td>
+                <td>
+                    @context.Phone
+                </td>
+            </tr>
+        </SelectedItemTemplate>
+        <EditItemTemplate TItem="Customer">
+            <tr style="background-color: #8FBC8F; white-space: nowrap;">
+                <td>
+                    <asp.Button Text="Update" CommandName="Update" />
+                    <asp.Button Text="Cancel" CommandName="Cancel" />
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.CompanyName"></asp.TextBox>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.ContactName"></asp.TextBox>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.JobTitle"></asp.TextBox>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.Phone"></asp.TextBox>
+                </td>
+            </tr>
+        </EditItemTemplate>
+        <InsertItemTemplate TItem="Customer">
+            <tr style="background-color: #FFFACD; white-space: nowrap;">
+                <td>
+                    <asp.Button Text="Insert" CommandName="Insert" />
+                    <asp.Button Text="Cancel" CommandName="Cancel" />
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.CompanyName"></asp.TextBox>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.ContactName"></asp.TextBox>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.JobTitle"></asp.TextBox>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.Phone"></asp.TextBox>
+                </td>
+            </tr>
+        </InsertItemTemplate>
+    </asp.ListView>
+</table>
+
+<asp.FreeDataSource ID="CustomersSource" OnExecuteSelected="sender => this.customers"
+                    OnExecuteInserted="this.CustomersSource_ExecuteInserted"
+                    OnExecuteUpdated="this.CustomersSource_ExecuteUpdated"
+                    OnExecuteDeleted="this.CustomersSource_ExecuteDeleted" />
+
+@code {
+    private Customer[] customers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await Http.GetFromJsonAsync<Customer[]>("sample-data/customers.json");
+    }
+
+    protected void CustomersSource_ExecuteInserted(object sender, IDictionary values)
+    {
+        // Insert record.
+        Customer customer = new Customer().Apply(() => values)
+            .Apply(() => new { CustomerID = customers.Max(a => a.CustomerID) + 1 });
+        customers = customers.Union(new Customer[] { customer }).ToArray();
+    }
+
+    protected void CustomersSource_ExecuteUpdated(object sender, IDictionary keys, IDictionary values, IDictionary oldValues)
+    {
+        // Update record.
+        customers.Where(a => a.CustomerID == (int)keys["CustomerID"]).Apply(a => values);
+    }
+
+    protected void CustomersSource_ExecuteDeleted(object sender, IDictionary keys, IDictionary oldValues)
+    {
+        // Delete record.
+        customers = customers.Where(a => a.CustomerID != (int)keys["CustomerID"]).ToArray();
+    }
+
+    public class Customer
+    {
+        public int CustomerID { get; set; }
+
+        public string CompanyName { get; set; }
+
+        public string ContactName { get; set; }
+
+        public string JobTitle { get; set; }
+
+        public string City { get; set; }
+
+        public string Address { get; set; }
+
+        public string CountryRegion { get; set; }
+
+        public string Phone { get; set; }
+
+        public string Fax { get; set; }
+    }
+}

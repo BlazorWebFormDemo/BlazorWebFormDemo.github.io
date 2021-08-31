@@ -1,0 +1,42 @@
+﻿@inherits ControlComponent
+<p>Enter a number from 1 to 10:</p>
+
+<br />
+
+<asp.TextBox ID="TextBox1" />
+
+<br />
+
+<asp.RangeValidator ControlToValidate="TextBox1"
+                    MinimumValue="1"
+                    MaximumValue="10"
+                    Type="ValidationDataType.Integer"
+                    EnableClientScript="false"
+                    Text="The value must be from 1 to 10!" />
+
+<br />
+<br />
+
+<asp.Label @ref="this.label1" />
+
+<br />
+<br />
+
+<asp.Button Text="Submit"
+            OnClick="this.ButtonClick" />
+
+@code {
+    private Label label1;
+
+    protected void ButtonClick(object sender, EventArgs e)
+    {
+        if ((this.Page as IValidatePage).IsValid)
+        {
+            label1.Text = "Page is valid.";
+        }
+        else
+        {
+            label1.Text = "Page is not valid!!";
+        }
+    }
+}
