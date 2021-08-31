@@ -1,0 +1,19 @@
+﻿@inherits ControlComponent
+
+<asp.Literal @ref="this.literal"
+             Text="Hello World!!" />
+
+<br />
+<br />
+
+<asp.Button Text="Change Literal Text"
+            OnClick="this.ButtonClick" />
+
+@code {
+    private Literal literal;
+
+    protected void ButtonClick(object sender, EventArgs e)
+    {
+        literal.Text = "Welcome to Blazor.WebForm!!";
+    }
+}

@@ -1,0 +1,19 @@
+﻿@inherits ControlComponent
+
+<asp.Localize @ref="this.localize"
+              Text="Hello World!!" />
+
+<br />
+<br />
+
+<asp.Button Text="Change Localize Text"
+            OnClick="this.ButtonClick" />
+
+@code {
+    private Localize localize;
+
+    protected void ButtonClick(object sender, EventArgs e)
+    {
+        localize.Text = "Welcome to Blazor.WebForm!! This is localized text.";
+    }
+}

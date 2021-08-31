@@ -1,0 +1,17 @@
+﻿@inherits ControlComponent
+<p>Click on the submit button.</p>
+
+<asp.Button Text="Submit" OnClick="this.SubmitBtn_Click" />
+
+<br />
+
+<asp.Label @ref="this.message" />
+
+@code {
+    private Label message;
+
+    protected void SubmitBtn_Click(object sender, EventArgs e)
+    {
+        message.Text = "Hello World!!";
+    }
+}

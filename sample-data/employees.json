@@ -1,0 +1,90 @@
+[
+  {
+    "EmployeeID": 1,
+    "LastName": "Freehafer",
+    "FirstName": "Nancy",
+    "Title": "Sales Representative",
+    "Address": "123 1st Avenue",
+    "City": "Seattle",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image1.jpg"
+  },
+  {
+    "EmployeeID": 2,
+    "LastName": "Cencini",
+    "FirstName": "Andrew",
+    "Title": "Vice President, Sales",
+    "Address": "123 2nd Avenue",
+    "City": "Bellevue",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image2.jpg"
+  },
+  {
+    "EmployeeID": 3,
+    "LastName": "Kotas",
+    "FirstName": "Jan",
+    "Title": "Sales Representative",
+    "Address": "123 3rd Avenue",
+    "City": "Redmond",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image3.jpg"
+  },
+  {
+    "EmployeeID": 4,
+    "LastName": "Sergienko",
+    "FirstName": "Mariya",
+    "Title": "Sales Representative",
+    "Address": "123 4th Avenue",
+    "City": "Kirkland",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image4.jpg"
+  },
+  {
+    "EmployeeID": 5,
+    "LastName": "Thorpe",
+    "FirstName": "Steven",
+    "Title": "Sales Manager",
+    "Address": "123 5th Avenue",
+    "City": "Seattle",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image5.jpg"
+  },
+  {
+    "EmployeeID": 6,
+    "LastName": "Neipper",
+    "FirstName": "Michael",
+    "Title": "Sales Representative",
+    "Address": "123 6th Avenue",
+    "City": "Redmond",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image6.jpg"
+  },
+  {
+    "EmployeeID": 7,
+    "LastName": "Zare",
+    "FirstName": "Robert",
+    "Title": "Sales Representative",
+    "Address": "123 7th Avenue",
+    "City": "Seattle",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image7.jpg"
+  },
+  {
+    "EmployeeID": 8,
+    "LastName": "Giussani",
+    "FirstName": "Laura",
+    "Title": "Sales Coordinator",
+    "Address": "123 8th Avenue",
+    "City": "Redmond",
+    "CountryRegion": "USA",
+    "Phone": "(123)555-0100",
+    "PhotoPath": "image8.jpg"
+  }
+]

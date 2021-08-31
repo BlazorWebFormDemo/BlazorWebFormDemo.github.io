@@ -1,0 +1,53 @@
+﻿@inherits ControlComponent
+
+<table cellpadding="10" style="background-color:#eeeeee;">
+    <tr valign="top">
+        <td colspan="3">
+            <asp.Label @ref="this.output"
+                       Text="Enter a 5-digit ZIP Code" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <b>Personal Information</b>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            Zip Code:
+        </td>
+        <td>
+            <asp.TextBox ID="TextBox1" />
+        </td>
+        <td>
+            <asp.RegularExpressionValidator ControlToValidate="TextBox1"
+                                            ValidationExpression="\d{5}"
+                                            Display="ValidatorDisplay.Static"
+                                            ErrorMessage="ZIP code must be 5 numeric digits"
+                                            EnableClientScript="false" />
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <asp.Button Text="Validate"
+                        OnClick="this.ValidateBtn_Click" />
+        </td>
+    </tr>
+</table>
+
+@code {
+    private Label output;
+
+    protected void ValidateBtn_Click(object sender, EventArgs e)
+    {
+        if ((this.Page as IValidatePage).IsValid)
+        {
+            output.Text = "Page is Valid.";
+        }
+        else
+        {
+            output.Text = "Page is InValid.";
+        }
+    }
+}

@@ -1,0 +1,67 @@
+﻿@inherits ControlComponent
+
+<asp.RadioButtonList @ref="this.radioButtonList">
+    <asp.ListItem>Item 1</asp.ListItem>
+    <asp.ListItem>Item 2</asp.ListItem>
+    <asp.ListItem>Item 3</asp.ListItem>
+    <asp.ListItem>Item 4</asp.ListItem>
+    <asp.ListItem>Item 5</asp.ListItem>
+    <asp.ListItem>Item 6</asp.ListItem>
+</asp.RadioButtonList>
+
+<br />
+
+<asp.CheckBox @ref="this.chkLayout" Text="Display Table Layout" AutoPostBack="true" Checked="true"
+              OnCheckedChanged="this.ChkLayout_CheckedChanged" />
+
+<br />
+
+<asp.CheckBox @ref="this.chkDirection" Text="Display Horizontally" AutoPostBack="true"
+              OnCheckedChanged="this.ChkDirection_CheckedChanged" />
+
+<br />
+
+<asp.Button Text="Submit" OnClick="this.Button1_Click" />
+
+<br />
+
+<asp.Label @ref="this.label" FontNames="Verdana" FontSize="8pt" />
+
+@code {
+    private RadioButtonList radioButtonList;
+    private CheckBox chkLayout;
+    private CheckBox chkDirection;
+    private Label label;
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        if (radioButtonList.SelectedIndex > -1)
+        {
+            label.Text = "You selected: " + radioButtonList.SelectedItem.Text;
+        }
+    }
+
+    protected void ChkLayout_CheckedChanged(object sender, EventArgs e)
+    {
+        if (chkLayout.Checked == true)
+        {
+            radioButtonList.RepeatLayout = RepeatLayout.Table;
+        }
+        else
+        {
+            radioButtonList.RepeatLayout = RepeatLayout.Flow;
+        }
+    }
+
+    protected void ChkDirection_CheckedChanged(object sender, EventArgs e)
+    {
+        if (chkDirection.Checked == true)
+        {
+            radioButtonList.RepeatDirection = RepeatDirection.Horizontal;
+        }
+        else
+        {
+            radioButtonList.RepeatDirection = RepeatDirection.Vertical;
+        }
+    }
+}

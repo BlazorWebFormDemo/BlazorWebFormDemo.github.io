@@ -1,0 +1,87 @@
+﻿@inherits ControlComponent
+<p>Click on one of the command buttons.</p>
+
+<asp.Button Text="Sort Ascending"
+            CommandName="Sort"
+            CommandArgument="Ascending"
+            OnCommand="this.CommandBtn_Click" />
+
+<asp.Button Text="Sort Descending"
+            CommandName="Sort"
+            CommandArgument="Descending"
+            OnCommand="this.CommandBtn_Click" />
+
+<br />
+<br />
+
+<asp.Button Text="Submit"
+            CommandName="Submit"
+            OnCommand="this.CommandBtn_Click" />
+
+<asp.Button Text="Unknown Command Name"
+            CommandName="UnknownName"
+            CommandArgument="UnknownArgument"
+            OnCommand="this.CommandBtn_Click" />
+
+<asp.Button Text="Submit Unknown Command Argument"
+            CommandName="Submit"
+            CommandArgument="UnknownArgument"
+            OnCommand="this.CommandBtn_Click" />
+
+<br />
+<br />
+
+<asp.Label @ref="this.message" />
+
+@code {
+    private Label message;
+
+    protected void CommandBtn_Click(object sender, CommandEventArgs e)
+    {
+        switch (e.CommandName)
+        {
+            case "Sort":
+                // Call the method to sort the list.
+                Sort_List((string)e.CommandArgument);
+                break;
+            case "Submit":
+                // Display a message for the Submit button being clicked.
+                message.Text = "You clicked the Submit button";
+                // Test whether the command argument is an empty string ("").
+                if ((string)e.CommandArgument == "")
+                {
+                    // End the message.
+                    message.Text += ".";
+                }
+                else
+                {
+                    // Display an error message for the command argument.
+                    message.Text += ", however the command argument is not recogized.";
+                }
+                break;
+            default:
+                // The command name is not recognized. Display an error message.
+                message.Text = "Command name not recogized.";
+                break;
+        }
+    }
+
+    protected void Sort_List(string commandArgument)
+    {
+        switch (commandArgument)
+        {
+            case "Ascending":
+                // Insert code to sort the list in ascending order here.
+                message.Text = "You clicked the Sort Ascending button.";
+                break;
+            case "Descending":
+                // Insert code to sort the list in descending order here.
+                message.Text = "You clicked the Sort Descending button.";
+                break;
+            default:
+                // The command argument is not recognized. Display an error message.
+                message.Text = "Command argument not recogized.";
+                break;
+        }
+    }
+}
