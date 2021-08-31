@@ -1,0 +1,174 @@
+﻿@inherits ControlComponent
+
+<asp.Wizard @ref="this.wizard"
+            OnFinishButtonClick="this.OnFinishButtonClick"
+            BackColor="#EFF3FB"
+            FontNames="Verdana"
+            FontSize="0.8em"
+            BorderWidth="1px"
+            BorderColor="#B5C7DE"
+            Style="font-size: medium; font-family: Verdana;"
+            OnActiveStepChanged="this.OnActiveStepChanged">
+    <StepStyle ForeColor="#333333"
+               FontSize="0.8em" />
+    <WizardSteps>
+        <asp.WizardStep @ref="this.step1" Title="One" AllowReturn="false">
+            Welcome to the Wizard example.  This step's AllowReturn property is set
+            to false, so after you leave this step you will not be able to return to it.
+        </asp.WizardStep>
+        <asp.WizardStep @ref="this.step2" Title="Two">
+            <!-- ... Put UI elements here ... -->
+            Please enter your billing information.
+            <br />
+            Name:<br />
+            <asp.TextBox Width="226px" Height="17px" />
+            <br />
+            Email Address:<br />
+            <asp.TextBox Width="224px" Height="17px" @bind-Text="this.emailAddress" />
+            <br />
+            Address Line 1: <br />
+            <asp.TextBox Width="314px" Height="17px" />
+            <br />
+            Address Line 2: <br />
+            <asp.TextBox Width="314px" Height="17px" />
+            <br />
+            City: <br />
+            <asp.TextBox Width="155px" Height="17px" />
+            <br />
+            State: <br />
+            <asp.TextBox Width="75px" Height="17px" />
+            <br />
+            ZIP Code: <br />
+            <asp.TextBox Height="17px" />
+            <br /><br />
+            <asp.CheckBox @bind-Checked="this.separateShipping" Text="Please check here if you would like to add a separate shipping address." />
+        </asp.WizardStep>
+        <asp.WizardStep @ref="this.step3"
+                        title="Three">
+            <!-- Gather the shipping address in this step if CheckBox1 was selected. -->
+            Please enter your shipping information.
+            <br />
+            Name:<br />
+            <asp.TextBox Height="17px" />
+            <br />
+            Address Line 1: <br />
+            <asp.TextBox Width="370px" Height="17px" />
+            <br />
+            Address Line 2: <br />
+            <asp.TextBox Width="370px" Height="17px" />
+            <br />
+            City: <br />
+            <asp.TextBox Height="17px" />
+            <br />
+            State: <br />
+            <asp.TextBox Width="65px" Height="17px" />
+            <br />
+            ZIP Code: <br />
+            <asp.TextBox Height="17px" />
+        </asp.WizardStep>
+        <asp.WizardStep @ref="this.finish" Title="Finish">
+            <!-- Put UI elements here for the Finish step. -->
+            <asp.Button Text="Go Back to Step 2"
+                        OnClick="this.OnGoBackButtonClick"
+                        ForeColor="#284E98"
+                        FontNames="Verdana"
+                        FontSize="1.0em"
+                        BorderStyle="BorderStyle.Solid"
+                        BorderWidth="1px"
+                        BorderColor="#507CD1"
+                        BackColor="White" />
+        </asp.WizardStep>
+        <asp.WizardStep StepType="WizardStepType.Complete"
+                        Title="Complete"
+                        @ref="this.complete">
+            <asp.Label Width="408px"
+                       Height="24px" Text="@this.completeMessage">
+            </asp.Label>
+        </asp.WizardStep>
+    </WizardSteps>
+    <NavigationButtonStyle ForeColor="#284E98"
+                           FontNames="Verdana"
+                           FontSize="1.0em"
+                           BorderStyle="BorderStyle.Solid"
+                           BorderWidth="1px"
+                           BorderColor="#507CD1"
+                           BackColor="White" />
+    <HeaderStyle ForeColor="White"
+                 HorizontalAlign="HorizontalAlign.Center"
+                 FontSize="0.9em"
+                 FontBold="true"
+                 BackColor="#284E98"
+                 BorderStyle="BorderStyle.Solid"
+                 BorderColor="#EFF3FB"
+                 BorderWidth="2px" />
+    <SideBarStyle VerticalAlign="VerticalAlign.Top"
+                  HorizontalAlign="HorizontalAlign.Center"
+                  FontSize="0.8em"
+                  ForeColor="#000099"
+                  BackColor="#EFF3FB"
+                  Width="45px" />
+    <HeaderTemplate>
+        <b>Wizard Example</b>
+    </HeaderTemplate>
+</asp.Wizard>
+
+@code {
+    private Wizard wizard;
+    private WizardStep step1;
+    private WizardStep step2;
+    private WizardStep step3;
+    private WizardStep finish;
+    private WizardStep complete;
+    private bool separateShipping;
+    private string emailAddress;
+    private string completeMessage;
+
+    protected void OnFinishButtonClick(Object sender, WizardNavigationEventArgs e)
+    {
+        // The OnFinishButtonClick method is a good place to collect all
+        // the data from the completed pages and persist it to the data store.
+
+        // For this example, write a confirmation message to the Complete page
+        // of the Wizard control.
+        completeMessage = "Your order has been placed. An email confirmation will be sent to "
+            + (string.IsNullOrEmpty(emailAddress) ? "your email address" : emailAddress) + ".";
+    }
+
+    protected void OnGoBackButtonClick(object sender, EventArgs e)
+    {
+        // The GoBackButtonClick event is raised when the GoBackButton
+        // is clicked on the Finish page of the Wizard.
+
+        // Check the value of Step1's AllowReturn property.
+        if (step1.AllowReturn)
+        {
+            // Return to Step1.
+            wizard.ActiveStepIndex = wizard.WizardSteps.IndexOf(step1);
+        }
+        else
+        {
+            // Step1 is not a valid step to return to; go to Step2 instead.
+            wizard.ActiveStepIndex = wizard.WizardSteps.IndexOf(step2);
+            this.ClientScript.RegisterStartupScript(this.GetType(), string.Empty
+                , "alert('ActiveStep is set to Step2 because Step1 has AllowReturn set to false.');");
+        }
+    }
+
+    protected void OnActiveStepChanged(object sender, EventArgs e)
+    {
+        // If the ActiveStep is changing to Step3, check to see whether the
+        // SeparateShippingCheckBox is selected.  If it is not, skip to the
+        // Finish step.
+        if (wizard.ActiveStepIndex == wizard.WizardSteps.IndexOf(step3))
+        {
+            if (separateShipping)
+            {
+                wizard.MoveTo(step3);
+            }
+            else
+            {
+                wizard.MoveTo(finish);
+            }
+        }
+    }
+}

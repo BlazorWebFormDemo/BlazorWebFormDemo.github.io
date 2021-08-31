@@ -1,0 +1,54 @@
+﻿@inherits ControlComponent
+@inject HttpClient Http
+<p>Select a background color for days in the calendar.</p>
+
+<asp.Calendar @ref="this.calendar" ShowGridLines="true" ShowTitle="true" />
+
+<br />
+
+<table cellpadding="5">
+    <tr>
+        <td>
+            Background color:
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <asp.DropDownList @ref="this.colorList"
+                              AutoPostBack="true" DataSourceID="FreeDataSource1"
+                              DataTextField="ColorTextField"
+                              DataValueField="ColorValueField"
+                              OnSelectedIndexChanged="this.Selection_Change">
+            </asp.DropDownList>
+
+            <asp.FreeDataSource ID="FreeDataSource1" OnExecuteSelected="sender => this.colors" />
+        </td>
+    </tr>
+</table>
+
+@code {
+    private Color[] colors;
+    private Calendar calendar;
+    private DropDownList colorList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        colors = await Http.GetFromJsonAsync<Color[]>("sample-data/colors.json");
+    }
+
+    protected void Selection_Change(object sender, EventArgs e)
+    {
+        // Set the background color for days in the Calendar control
+        // based on the value selected by the user from the
+        // DropDownList control.
+        calendar.DayStyle.BackColor =
+            System.Drawing.Color.FromName(colorList.SelectedItem.Value);
+    }
+
+    public class Color
+    {
+        public string ColorTextField { get; set; }
+
+        public string ColorValueField { get; set; }
+    }
+}

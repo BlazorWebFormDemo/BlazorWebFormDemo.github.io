@@ -1,0 +1,106 @@
+﻿@using System.Collections
+@inherits ControlComponent
+@inject HttpClient Http
+
+<asp.FormView DataSourceID="EmployeeSource"
+              AllowPaging="true"
+              DataKeyNames="EmployeeID"
+              EmptyDataText="No employees found.">
+    <RowStyle BackColor="LightGreen"
+              Wrap="false" />
+    <InsertRowStyle BackColor="LightBlue"
+                    Wrap="false" />
+    <ItemTemplate TItem="Employee">
+        <table>
+            <tr>
+                <td>
+                    <b>Name:</b>
+                </td>
+                <td>
+                    @context.FirstName @context.LastName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Title:</b>
+                </td>
+                <td>
+                    @context.Title
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp.LinkButton Text="New" CommandName="New" />
+                </td>
+            </tr>
+        </table>
+    </ItemTemplate>
+    <InsertItemTemplate TItem="Employee">
+        <table>
+            <tr>
+                <td>
+                    <b>Name:</b>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.FirstName" />
+                    <asp.TextBox @bind-Text="context.LastName" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Title:</b>
+                </td>
+                <td>
+                    <asp.TextBox @bind-Text="context.Title" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp.LinkButton Text="Insert" CommandName="Insert" />
+                    <asp.LinkButton Text="Cancel" CommandName="Cancel" />
+                </td>
+            </tr>
+        </table>
+    </InsertItemTemplate>
+</asp.FormView>
+
+<asp.FreeDataSource ID="EmployeeSource" OnExecuteSelected="sender => this.employees"
+                    OnExecuteInserted="this.EmployeeSource_ExecuteInserted" />
+
+@code {
+    private Employee[] employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await Http.GetFromJsonAsync<Employee[]>("sample-data/employees.json");
+    }
+
+    protected void EmployeeSource_ExecuteInserted(object sender, IDictionary values)
+    {
+        // Insert record.
+        Employee employee = new Employee().Apply(() => values)
+            .Apply(() => new { CustomerID = employees.Max(a => a.EmployeeID) + 1 });
+        employees = employees.Union(new Employee[] { employee }).ToArray();
+    }
+
+    public class Employee
+    {
+        public int EmployeeID { get; set; }
+
+        public string LastName { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string Title { get; set; }
+
+        public string Address { get; set; }
+
+        public string City { get; set; }
+
+        public string CountryRegion { get; set; }
+
+        public string Phone { get; set; }
+
+        public string PhotoPath { get; set; }
+    }
+}

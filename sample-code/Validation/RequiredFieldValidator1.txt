@@ -1,0 +1,52 @@
+﻿@inherits ControlComponent
+
+<table cellpadding="10" style="background-color:#eeeeee;">
+    <tr valign="top">
+        <td colspan="3">
+            <asp.Label @ref="this.output"
+                       Text="Fill in the required field below" />
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <b>Credit Card Information</b>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            Card Number:
+        </td>
+        <td>
+            <asp.TextBox ID="TextBox1" />
+        </td>
+        <td>
+            <asp.RequiredFieldValidator ControlToValidate="TextBox1"
+                                        Display="ValidatorDisplay.Static"
+                                        ErrorMessage="*" />
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <asp.Button Text="Validate"
+                        OnClick="this.ValidateBtn_Click" />
+        </td>
+    </tr>
+</table>
+
+@code {
+    private Label output;
+
+    protected void ValidateBtn_Click(object sender, EventArgs e)
+    {
+        if ((this.Page as IValidatePage).IsValid)
+        {
+            output.Text = "Required field is filled!";
+        }
+        else
+        {
+            output.Text = "Required field is empty!";
+        }
+    }
+}

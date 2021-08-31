@@ -1,0 +1,53 @@
+﻿@inherits ControlComponent
+@inject HttpClient Http
+
+<table cellpadding="2" width="640px" border="1">
+    <asp.Repeater DataSourceID="FreeDataSource1">
+        <HeaderTemplate>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </HeaderTemplate>
+        <ItemTemplate TItem="WeatherForecast">
+            <tr>
+                <td>
+                    @string.Format("{0:yyyy/M/d}", context.Date)
+                </td>
+                <td>
+                    @context.TemperatureC
+                </td>
+                <td>
+                    @context.TemperatureF
+                </td>
+                <td>
+                    @context.Summary
+                </td>
+            </tr>
+        </ItemTemplate>
+    </asp.Repeater>
+</table>
+
+<asp.FreeDataSource ID="FreeDataSource1" OnExecuteSelected="sender => this.forecasts" />
+
+@code {
+    private WeatherForecast[] forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}

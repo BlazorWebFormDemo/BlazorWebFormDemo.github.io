@@ -1,0 +1,124 @@
+﻿@inherits ControlComponent
+
+<asp.MultiView @ref="this.multiView" ActiveViewIndex="0">
+    <asp.View>
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for View1.">
+        </asp.Label>
+        <br />
+        <asp.Button Text="Previous"
+                    Enabled="false"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+        <asp.Button Text="Next"
+                    OnClick="this.NextButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+    </asp.View>
+    <asp.View>
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for View2.">
+        </asp.Label>
+        <br />
+        <asp.Button Text="Previous"
+                    OnClick="this.BackButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+        <asp.Button Text="Next"
+                    OnClick="this.NextButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+    </asp.View>
+    <asp.View>
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for View3.">
+        </asp.Label>
+        <br />
+        <asp.Button Text="Previous"
+                    OnClick="this.BackButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+        <asp.Button Text="Next"
+                    OnClick="this.NextButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+    </asp.View>
+    <asp.View>
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for View4.">
+        </asp.Label>
+        <br />
+        <asp.Button Text="Previous"
+                    OnClick="this.BackButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+        <asp.Button Text="Next"
+                    OnClick="this.NextButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+    </asp.View>
+    <asp.View>
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for View5.">
+        </asp.Label>
+        <br />
+        <asp.Button Text="Previous"
+                    OnClick="this.BackButton_Command"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+        <asp.Button Text="Next"
+                    Enabled="false"
+                    Height="30"
+                    Width="75">
+        </asp.Button>
+    </asp.View>
+</asp.MultiView>
+
+@code {
+    private MultiView multiView;
+
+    protected void NextButton_Command(object sender, EventArgs e)
+    {
+        // Determine which button was clicked
+        // and set the ActiveViewIndex property to
+        // the view selected by the user.
+        if (multiView.ActiveViewIndex > -1 & multiView.ActiveViewIndex < multiView.Views.Count - 1)
+        {
+            // Increment the ActiveViewIndex property
+            // by one to advance to the next view.
+            multiView.ActiveViewIndex += 1;
+        }
+        else
+        {
+            throw new Exception("An error occurred.");
+        }
+    }
+
+    protected void BackButton_Command(object sender, EventArgs e)
+    {
+        if (multiView.ActiveViewIndex > 0 & multiView.ActiveViewIndex < multiView.Views.Count)
+        {
+            // Decrement the ActiveViewIndex property
+            // by one to return to the previous view.
+            multiView.ActiveViewIndex -= 1;
+        }
+        else
+        {
+            throw new Exception("An error occurred.");
+        }
+    }
+}

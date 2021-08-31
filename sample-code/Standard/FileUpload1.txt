@@ -1,0 +1,47 @@
+﻿@inherits ControlComponent
+<p>Select a file to upload:</p>
+
+<asp.FileUpload @ref="this.fileUpload">
+</asp.FileUpload>
+
+<br />
+<br />
+
+<asp.Button Text="Upload file"
+            OnClick="this.UploadButton_Click">
+</asp.Button>
+
+<br />
+
+<asp.Label @ref="this.uploadStatusLabel">
+</asp.Label>
+
+@code {
+    private FileUpload fileUpload;
+    private Label uploadStatusLabel;
+
+    protected void UploadButton_Click(object sender, EventArgs e)
+    {
+        // Before attempting to perform operations
+        // on the file, verify that the FileUpload
+        // control contains a file.
+        if (fileUpload.HasFile)
+        {
+            // Get the name of the file to upload.
+            string fileName = fileUpload.FileName;
+            // Get the size in bytes of the file to upload.
+            int fileSize = fileUpload.PostedFile.ContentLength;
+            // Get the extension of the uploaded file.
+            string extension = System.IO.Path.GetExtension(fileName);
+            // Notify the user of the name of the file
+            // was saved under.
+            uploadStatusLabel.Text = "Your file was saved as " + fileName
+                + " ( fileSize:" + fileSize + " extension:" + extension + " )";
+        }
+        else
+        {
+            // Notify the user that a file was not uploaded.
+            uploadStatusLabel.Text = "You did not specify a file to upload.";
+        }
+    }
+}

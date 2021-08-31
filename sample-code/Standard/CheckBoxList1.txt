@@ -1,0 +1,43 @@
+﻿@inherits ControlComponent
+<p>Select items from the CheckBoxList.</p>
+
+<asp.CheckBoxList @ref="this.checkboxlist"
+                  AutoPostBack="true"
+                  CellPadding="5"
+                  CellSpacing="5"
+                  RepeatColumns="2"
+                  RepeatDirection="RepeatDirection.Vertical"
+                  RepeatLayout="RepeatLayout.Flow"
+                  TextAlign="TextAlign.Right"
+                  OnSelectedIndexChanged="this.Check_Clicked">
+    <asp.ListItem>Item 1</asp.ListItem>
+    <asp.ListItem>Item 2</asp.ListItem>
+    <asp.ListItem>Item 3</asp.ListItem>
+    <asp.ListItem>Item 4</asp.ListItem>
+    <asp.ListItem>Item 5</asp.ListItem>
+    <asp.ListItem>Item 6</asp.ListItem>
+</asp.CheckBoxList>
+
+<br />
+<br />
+
+<asp.Label @ref="this.message" />
+
+@code {
+    private CheckBoxList checkboxlist;
+    private Label message;
+
+    protected void Check_Clicked(object sender, EventArgs e)
+    {
+        message.Text = "Selected Item(s):<br /><br />";
+        // Iterate through the Items collection of the CheckBoxList
+        // control and display the selected items.
+        for (int i = 0; i < checkboxlist.Items.Count; i++)
+        {
+            if (checkboxlist.Items[i].Selected)
+            {
+                message.Text += checkboxlist.Items[i].Text + "<br />";
+            }
+        }
+    }
+}

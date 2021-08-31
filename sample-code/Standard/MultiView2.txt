@@ -1,0 +1,92 @@
+﻿@inherits ControlComponent
+
+<asp.MultiView @ref="this.multiView" ActiveViewIndex="0">
+    <asp.View @ref="this.defaultView">
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for Default View.">
+        </asp.Label>
+        <br />
+        <asp.LinkButton Text="Go to News View"
+                        OnCommand="this.LinkButton_Command"
+                        CommandArgument="News"
+                        CommandName="Link"
+                        Width="200px">
+        </asp.LinkButton>
+        <br />
+        <asp.LinkButton Text="Go to Shopping View"
+                        OnCommand="this.LinkButton_Command"
+                        CommandArgument="Shopping"
+                        CommandName="Link"
+                        Width="200px">
+        </asp.LinkButton>
+    </asp.View>
+    <asp.View @ref="this.newsView">
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for News View.">
+        </asp.Label>
+        <br />
+        <asp.LinkButton Text="Go to Default View"
+                        OnCommand="this.LinkButton_Command"
+                        CommandArgument="DefaultView"
+                        CommandName="Link"
+                        Width="200px">
+        </asp.LinkButton>
+        <br />
+        <asp.LinkButton Text="Go to Shopping View"
+                        OnCommand="this.LinkButton_Command"
+                        CommandArgument="Shopping"
+                        CommandName="Link"
+                        Width="200px">
+        </asp.LinkButton>
+    </asp.View>
+    <asp.View @ref="this.shoppingView">
+        <asp.Label FontBold="true"
+                   FontSize="14"
+                   Text="This is the content for Shopping View.">
+        </asp.Label>
+        <br />
+        <asp.LinkButton Text="Go to Default View"
+                        OnCommand="this.LinkButton_Command"
+                        CommandArgument="DefaultView"
+                        CommandName="Link"
+                        Width="200px">
+        </asp.LinkButton>
+        <br />
+        <asp.LinkButton Text="Go to News View"
+                        OnCommand="this.LinkButton_Command"
+                        CommandArgument="News"
+                        CommandName="Link"
+                        Width="200px">
+        </asp.LinkButton>
+    </asp.View>
+</asp.MultiView>
+
+@code {
+    private MultiView multiView;
+    private View defaultView;
+    private View newsView;
+    private View shoppingView;
+
+    protected void LinkButton_Command(object sender, CommandEventArgs e)
+    {
+        // Determine which link button was clicked
+        // and set the active view to
+        // the view selected by the user.
+        switch (e.CommandArgument)
+        {
+            case "DefaultView":
+                multiView.SetActiveView(defaultView);
+                break;
+            case "News":
+                multiView.SetActiveView(newsView);
+                break;
+            case "Shopping":
+                multiView.SetActiveView(shoppingView);
+                break;
+            default:
+                throw new Exception("You did not select a valid list item.");
+        }
+    }
+}

@@ -1,0 +1,72 @@
+﻿@inherits ControlComponent
+<p>Click on the computer, the phone, or the cup of coffee:</p>
+
+<asp.ImageMap @ref="this.workMap" ImageUrl="img/workplace.jpg" ImageAlign="ImageAlign.Left"
+              Width="400px" Height="379px"
+              AlternateText="Workplace"
+              HotSpotMode="HotSpotMode.PostBack"
+              OnClick="this.WorkMap_Clicked">
+    <asp.RectangleHotSpot Top="44"
+                          Left="34"
+                          Bottom="350"
+                          Right="270"
+                          PostBackValue="Computer"
+                          AlternateText="Computer">
+    </asp.RectangleHotSpot>
+    <asp.RectangleHotSpot Top="172"
+                          Left="290"
+                          Bottom="250"
+                          Right="333"
+                          PostBackValue="Phone"
+                          AlternateText="Phone">
+    </asp.RectangleHotSpot>
+    <asp.CircleHotSpot X="337"
+                       Y="300"
+                       Radius="44"
+                       PostBackValue="Cup of coffee"
+                       AlternateText="Cup of coffee">
+    </asp.CircleHotSpot>
+</asp.ImageMap>
+
+<br />
+<br />
+
+<asp.Label @ref="this.message" />
+
+@code {
+    private ImageMap workMap;
+    private Label message;
+
+    protected void WorkMap_Clicked(object sender, ImageMapEventArgs e)
+    {
+        string coordinates;
+        // When a user clicks the "Computer" hot spot,
+        // display the hot spot's value.
+        if (e.PostBackValue.Contains("Computer"))
+        {
+            coordinates = workMap.HotSpots[0].GetCoordinates();
+            message.Text = "You selected the " + e.PostBackValue + "<br />" +
+                      "The coordinates are " + coordinates + ".";
+        }
+        // When a user clicks the "Phone" hot spot,
+        // display the hot spot's value.
+        else if (e.PostBackValue.Contains("Phone"))
+        {
+            coordinates = workMap.HotSpots[1].GetCoordinates();
+            message.Text = "You selected the " + e.PostBackValue + "<br />" +
+                      "The coordinates are " + coordinates + ".";
+        }
+        // When a user clicks the "Cup of coffee" hot spot,
+        // display the hot spot's value.
+        else if (e.PostBackValue.Contains("Cup of coffee"))
+        {
+            coordinates = workMap.HotSpots[2].GetCoordinates();
+            message.Text = "You selected the " + e.PostBackValue + "<br />" +
+                      "The coordinates are " + coordinates + ".";
+        }
+        else
+        {
+            message.Text = "You did not click a valid hot spot region.";
+        }
+    }
+}

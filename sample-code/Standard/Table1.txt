@@ -1,0 +1,26 @@
+﻿@inherits ControlComponent
+
+<asp.Table CellPadding="10"
+           GridLines="GridLines.Both"
+           HorizontalAlign="HorizontalAlign.Center">
+    <asp.TableRow>
+        <asp.TableCell>
+            Row 0, Col 0
+        </asp.TableCell>
+        <asp.TableCell>
+            Row 0, Col 1
+        </asp.TableCell>
+    </asp.TableRow>
+    <asp.TableRow>
+        <asp.TableCell>
+            Row 1, Col 0
+        </asp.TableCell>
+        <asp.TableCell>
+            Row 1, Col 1
+        </asp.TableCell>
+    </asp.TableRow>
+</asp.Table>
+
+@code {
+
+}

@@ -1,0 +1,105 @@
+﻿@inherits ControlComponent
+<p>Select Image Align:</p>
+
+<div style="font-size:large;">
+    Text Text Text Text Text Text
+    <asp.Image @ref="this.image"
+               AlternateText="Image text"
+               ImageAlign="ImageAlign.Left"
+               ImageUrl="img/logo.png" />
+    Text Text Text Text Text Text
+</div>
+
+<br />
+<br />
+
+<asp.DropDownList @ref="this.dropList">
+    <asp.ListItem>NotSet</asp.ListItem>
+    <asp.ListItem>Left</asp.ListItem>
+    <asp.ListItem>Right</asp.ListItem>
+    <asp.ListItem>BaseLine</asp.ListItem>
+    <asp.ListItem>Top</asp.ListItem>
+    <asp.ListItem>Middle</asp.ListItem>
+    <asp.ListItem>Bottom</asp.ListItem>
+    <asp.ListItem>AbsBottom</asp.ListItem>
+    <asp.ListItem>AbsMiddle</asp.ListItem>
+    <asp.ListItem>TextTop</asp.ListItem>
+</asp.DropDownList>
+
+<br />
+<br />
+
+<asp.Button Text="Apply Image Alignment"
+            OnClick="this.Button_Click" />
+
+@code {
+    private Image image;
+    private DropDownList dropList;
+
+    protected void Button_Click(object sender, EventArgs e)
+    {
+        switch (dropList.SelectedIndex)
+        {
+            case 0:
+                image.ImageAlign = ImageAlign.NotSet;
+                break;
+            case 1:
+                image.ImageAlign = ImageAlign.Left;
+                break;
+            case 2:
+                image.ImageAlign = ImageAlign.Right;
+                break;
+            case 3:
+                image.ImageAlign = ImageAlign.Baseline;
+                break;
+            case 4:
+                image.ImageAlign = ImageAlign.Top;
+                break;
+            case 5:
+                image.ImageAlign = ImageAlign.Middle;
+                break;
+            case 6:
+                image.ImageAlign = ImageAlign.Bottom;
+                break;
+            case 7:
+                image.ImageAlign = ImageAlign.AbsBottom;
+                break;
+            case 8:
+                image.ImageAlign = ImageAlign.AbsMiddle;
+                break;
+            case 9:
+                image.ImageAlign = ImageAlign.TextTop;
+                break;
+            default:
+                image.ImageAlign = ImageAlign.NotSet;
+                break;
+        }
+        //override bootstrap img style vertical-align.
+        switch (image.ImageAlign)
+        {
+            case ImageAlign.Left:
+            case ImageAlign.Right:
+            case ImageAlign.Top:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "top";
+                break;
+            case ImageAlign.Middle:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "-webkit-baseline-middle";
+                break;
+            case ImageAlign.Bottom:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "baseline";
+                break;
+            case ImageAlign.AbsBottom:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "bottom";
+                break;
+            case ImageAlign.AbsMiddle:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "middle";
+                break;
+            case ImageAlign.TextTop:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "text-top";
+                break;
+            default:
+                image.Style[HtmlTextWriterStyle.VerticalAlign] = "";
+                break;
+        }
+    }
+}

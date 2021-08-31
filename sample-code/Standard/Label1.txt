@@ -1,0 +1,22 @@
+﻿@inherits ControlComponent
+
+<asp.Label @ref="this.label"
+           Text="Label Control" />
+
+<p>
+    <asp.TextBox @ref="this.text"
+                 Text="Copy this text to the label"
+                 Width="200px" />
+    <asp.Button Text="Copy"
+                OnClick="this.Button_Click" />
+</p>
+
+@code {
+    private Label label;
+    private TextBox text;
+
+    protected void Button_Click(object sender, EventArgs e)
+    {
+        label.Text = System.Web.HttpUtility.HtmlEncode(text.Text);
+    }
+}

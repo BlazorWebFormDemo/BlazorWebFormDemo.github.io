@@ -1,0 +1,51 @@
+﻿@inherits ControlComponent
+@inject HttpClient Http
+
+<asp.FreeDataSource ID="CustomersSource" OnExecuteSelected="sender => this.customers" />
+
+<asp.GridView DataSourceID="CustomersSource"
+              AutoGenerateColumns="false"
+              EmptyDataText="No data available."
+              AllowPaging="true"
+              DataKeyNames="CustomerID">
+    <Columns>
+        <asp.BoundField DataField="CustomerID" HeaderText="CustomerID"
+                        InsertVisible="false" ReadOnly="true" SortExpression="CustomerID" />
+        <asp.BoundField DataField="CompanyName" HeaderText="CompanyName"
+                        SortExpression="CompanyName" />
+        <asp.BoundField DataField="ContactName" HeaderText="ContactName"
+                        SortExpression="ContactName" />
+        <asp.BoundField DataField="JobTitle" HeaderText="JobTitle"
+                        SortExpression="JobTitle" />
+    </Columns>
+</asp.GridView>
+
+@code {
+    private Customer[] customers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await Http.GetFromJsonAsync<Customer[]>("sample-data/customers.json");
+    }
+
+    public class Customer
+    {
+        public int CustomerID { get; set; }
+
+        public string CompanyName { get; set; }
+
+        public string ContactName { get; set; }
+
+        public string JobTitle { get; set; }
+
+        public string City { get; set; }
+
+        public string Address { get; set; }
+
+        public string CountryRegion { get; set; }
+
+        public string Phone { get; set; }
+
+        public string Fax { get; set; }
+    }
+}
