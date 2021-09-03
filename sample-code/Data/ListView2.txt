@@ -121,8 +121,7 @@
     protected void CustomersSource_ExecuteUpdated(object sender, IDictionary keys, IDictionary values, IDictionary oldValues)
     {
         // Update record.
-        Customer customer = new Customer().Apply(() => values).Apply(() => keys);
-        customers.Where(a => a.CustomerID == (int)keys["CustomerID"]).Apply(a => customer);
+        customers.Where(a => a.CustomerID == (int)keys["CustomerID"]).Apply(a => values);
     }
 
     protected void CustomersSource_ExecuteDeleted(object sender, IDictionary keys, IDictionary oldValues)
