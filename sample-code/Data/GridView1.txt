@@ -5,9 +5,13 @@
 
 <asp.GridView DataSourceID="CustomersSource"
               AutoGenerateColumns="false"
+              DataKeyNames="CustomerID"
               EmptyDataText="No data available."
-              AllowPaging="true"
-              DataKeyNames="CustomerID">
+              AllowPaging="true" AllowSorting="true" PageSize="5"
+              CellPadding="4" GridLines="GridLines.None">
+    <HeaderStyle BackColor="#507cd1" FontBold="true" ForeColor="White" />
+    <RowStyle BackColor="#eff3fb" />
+    <AlternatingRowStyle BackColor="White" />
     <Columns>
         <asp.BoundField DataField="CustomerID" HeaderText="CustomerID"
                         InsertVisible="false" ReadOnly="true" SortExpression="CustomerID" />
@@ -18,6 +22,10 @@
         <asp.BoundField DataField="JobTitle" HeaderText="JobTitle"
                         SortExpression="JobTitle" />
     </Columns>
+    <SortedAscendingCellStyle BackColor="#f5f7fb" />
+    <SortedAscendingHeaderStyle BackColor="#6d95e1" />
+    <SortedDescendingCellStyle BackColor="#e9ebef" />
+    <SortedDescendingHeaderStyle BackColor="#4870be" />
 </asp.GridView>
 
 @code {

@@ -11,6 +11,7 @@
               EmptyDataText="No data available."
               AllowPaging="true"
               DataKeyNames="CustomerID">
+    <EditRowStyle BackColor="#8fbc8f" />
     <Columns>
         <asp.CommandField ShowDeleteButton="true"
                           ShowEditButton="true" />
