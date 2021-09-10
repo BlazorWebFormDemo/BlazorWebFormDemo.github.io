@@ -16,7 +16,10 @@
 
     protected void SubmitBtn_Click(object sender, EventArgs e)
     {
-        Thread.Sleep(3000);
-        button.Text = DateTime.Now.ToString();
+        this.InvokeWaitTask(async () =>
+        {
+            await Task.Delay(3000);
+            button.Text = DateTime.Now.ToString();
+        });
     }
 }
