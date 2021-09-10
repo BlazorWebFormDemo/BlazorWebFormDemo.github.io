@@ -1,5 +1,4 @@
-﻿@using System.Threading
-@inherits ControlComponent
+﻿@inherits ControlComponent
 
 <asp.Button @ref="this.button" OnClick="this.SubmitBtn_Click">Submit</asp.Button>
 
