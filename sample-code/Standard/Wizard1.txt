@@ -123,7 +123,7 @@
     private string emailAddress;
     private string completeMessage;
 
-    protected void OnFinishButtonClick(Object sender, WizardNavigationEventArgs e)
+    protected void OnFinishButtonClick(object sender, WizardNavigationEventArgs e)
     {
         // The OnFinishButtonClick method is a good place to collect all
         // the data from the completed pages and persist it to the data store.
