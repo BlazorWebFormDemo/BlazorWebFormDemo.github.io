@@ -1,5 +1,5 @@
 ﻿@inherits ControlComponent
-<p>Select a image file:</p>
+<p>Select an image file:</p>
 
 <asp.FileUpload @ref="this.fileUpload" AutoPostBack="true"
                 OnPostedFileChanged="this.FileUpload_PostedFileChanged"></asp.FileUpload>
