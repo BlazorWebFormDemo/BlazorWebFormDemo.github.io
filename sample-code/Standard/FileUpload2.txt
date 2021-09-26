@@ -1,0 +1,30 @@
+﻿@inherits ControlComponent
+<p>Select a image file:</p>
+
+<asp.FileUpload @ref="this.fileUpload" AutoPostBack="true"
+                OnPostedFileChanged="this.FileUpload_PostedFileChanged"></asp.FileUpload>
+
+<br />
+<br />
+
+<asp.Image @ref="this.image" Visible="false"></asp.Image>
+
+@code {
+    private FileUpload fileUpload;
+    private Image image;
+
+    protected async void FileUpload_PostedFileChanged(object sender, EventArgs e)
+    {
+        if (fileUpload.HasFile)
+        {
+            // Save the file to client ObjectURL.
+            string mediaType = $"image/{System.IO.Path.GetExtension(fileUpload.FileName).Substring(1)}";
+            string imageUrl = await fileUpload.SaveAsUrlAsync(mediaType);
+            // Show image.
+            image.ImageUrl = imageUrl;
+            image.Visible = true;
+
+            this.StateHasChanged();
+        }
+    }
+}
