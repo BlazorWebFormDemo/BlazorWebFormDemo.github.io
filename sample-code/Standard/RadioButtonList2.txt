@@ -1,0 +1,44 @@
+﻿@inherits ControlComponent
+@inject HttpClient Http
+
+<asp.RadioButtonList @ref="this.radioButtonList"
+                     DataSourceID="FreeDataSource1"
+                     DataTextField="ColorTextField"
+                     DataValueField="ColorValueField">
+</asp.RadioButtonList>
+
+<asp.FreeDataSource ID="FreeDataSource1" OnExecuteSelected="sender => this.colors" />
+
+<br />
+
+<asp.Button Text="Submit" OnClick="this.Button1_Click" />
+
+<br />
+
+<asp.Label @ref="this.label" FontNames="Verdana" FontSize="8pt" />
+
+@code {
+    private Color[] colors;
+    private RadioButtonList radioButtonList;
+    private Label label;
+
+    protected override async Task OnInitializedAsync()
+    {
+        colors = await Http.GetFromJsonAsync<Color[]>("sample-data/colors.json");
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        if (radioButtonList.SelectedIndex > -1)
+        {
+            label.Text = "You selected: " + radioButtonList.SelectedItem.Text;
+        }
+    }
+
+    public class Color
+    {
+        public string ColorTextField { get; set; }
+
+        public string ColorValueField { get; set; }
+    }
+}

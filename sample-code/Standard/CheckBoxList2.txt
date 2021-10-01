@@ -1,0 +1,50 @@
+﻿@inherits ControlComponent
+@inject HttpClient Http
+<p>Select items from the CheckBoxList.</p>
+
+<asp.CheckBoxList @ref="this.checkboxlist"
+                  AutoPostBack="true"
+                  DataSourceID="FreeDataSource1"
+                  DataTextField="ColorTextField"
+                  DataValueField="ColorValueField"
+                  OnSelectedIndexChanged="this.Check_Clicked">
+</asp.CheckBoxList>
+
+<asp.FreeDataSource ID="FreeDataSource1" OnExecuteSelected="sender => this.colors" />
+
+<br />
+<br />
+
+<asp.Label @ref="this.message" />
+
+@code {
+    private Color[] colors;
+    private CheckBoxList checkboxlist;
+    private Label message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        colors = await Http.GetFromJsonAsync<Color[]>("sample-data/colors.json");
+    }
+
+    protected void Check_Clicked(object sender, EventArgs e)
+    {
+        message.Text = "Selected Item(s):<br /><br />";
+        // Iterate through the Items collection of the CheckBoxList
+        // control and display the selected items.
+        for (int i = 0; i < checkboxlist.Items.Count; i++)
+        {
+            if (checkboxlist.Items[i].Selected)
+            {
+                message.Text += checkboxlist.Items[i].Text + "<br />";
+            }
+        }
+    }
+
+    public class Color
+    {
+        public string ColorTextField { get; set; }
+
+        public string ColorValueField { get; set; }
+    }
+}
