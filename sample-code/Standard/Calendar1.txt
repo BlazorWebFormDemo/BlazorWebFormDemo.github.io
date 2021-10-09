@@ -7,10 +7,12 @@
     </OtherMonthDayStyle>
     <TitleStyle BackColor="Blue" ForeColor="White">
     </TitleStyle>
-    <DayStyle BackColor="gray">
+    <DayStyle BackColor="Gray">
     </DayStyle>
     <SelectedDayStyle BackColor="LightGray" FontBold="true">
     </SelectedDayStyle>
+    <TodayDayStyle BackColor="#CCCCCC"></TodayDayStyle>
+    <NextPrevStyle ForeColor="White"></NextPrevStyle>
 </asp.Calendar>
 
 <br />
