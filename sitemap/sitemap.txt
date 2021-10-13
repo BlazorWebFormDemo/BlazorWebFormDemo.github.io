@@ -33,9 +33,9 @@ https://blazorwebformdemo.github.io/Standard/RadioButtonList
 https://blazorwebformdemo.github.io/Standard/Table
 https://blazorwebformdemo.github.io/Standard/TextBox
 https://blazorwebformdemo.github.io/Standard/Wizard
-https://blazorwebformdemo.github.io/Standard/CompareValidator
-https://blazorwebformdemo.github.io/Standard/CustomValidator
-https://blazorwebformdemo.github.io/Standard/RangeValidator
-https://blazorwebformdemo.github.io/Standard/RegularExpressionValidator
-https://blazorwebformdemo.github.io/Standard/RequiredFieldValidator
-https://blazorwebformdemo.github.io/Standard/ValidationSummary
+https://blazorwebformdemo.github.io/Validation/CompareValidator
+https://blazorwebformdemo.github.io/Validation/CustomValidator
+https://blazorwebformdemo.github.io/Validation/RangeValidator
+https://blazorwebformdemo.github.io/Validation/RegularExpressionValidator
+https://blazorwebformdemo.github.io/Validation/RequiredFieldValidator
+https://blazorwebformdemo.github.io/Validation/ValidationSummary
