@@ -1,6 +1,6 @@
 ﻿@inherits ControlComponent
 
-<asp.Table @ref="this.table"
+<asp.Table _ref="() => this.table"
            GridLines="GridLines.Both"
            HorizontalAlign="HorizontalAlign.Center"
            FontNames="Verdana"
@@ -9,12 +9,11 @@
            CellSpacing="0" />
 
 @code {
-    private Table table;
+    private Table table = new Table();
 
-    protected override void OnAfterRender(bool firstRender)
+    protected override void OnLoad(object sender, EventArgs e)
     {
-        base.OnAfterRender(firstRender);
-        if (firstRender)
+        if (!this.Page.IsPostBack)
         {
             // Generate rows and cells.
             int numRows = 3;
@@ -30,7 +29,6 @@
                 }
                 table.Rows.Add(row);
             }
-            this.StateHasChanged();
         }
     }
 }

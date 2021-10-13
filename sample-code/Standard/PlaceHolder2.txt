@@ -1,19 +1,17 @@
 ﻿@using BlazorWebFormDemo.Pages
 @inherits ControlComponent
 
-<asp.PlaceHolder @ref="this.placeHolder" />
+<asp.PlaceHolder _ref="() => this.placeHolder" />
 
 @code {
-    private PlaceHolder placeHolder;
+    private PlaceHolder placeHolder = new PlaceHolder();
 
-    protected override void OnAfterRender(bool firstRender)
+    protected override void OnLoad(object sender, EventArgs e)
     {
-        base.OnAfterRender(firstRender);
-        if (firstRender)
+        if (!this.Page.IsPostBack)
         {
             DynamicComponentControl counter = (DynamicComponentControl)this.Control.LoadControl(typeof(Counter));
             placeHolder.Controls.Add(counter);
-            this.StateHasChanged();
         }
     }
 }

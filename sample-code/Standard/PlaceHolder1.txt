@@ -1,15 +1,14 @@
 ﻿@using System.Web.UI.HtmlControls
 @inherits ControlComponent
 
-<asp.PlaceHolder @ref="this.placeHolder" />
+<asp.PlaceHolder _ref="() => this.placeHolder" />
 
 @code {
-    private PlaceHolder placeHolder;
+    private PlaceHolder placeHolder = new PlaceHolder();
 
-    protected override void OnAfterRender(bool firstRender)
+    protected override void OnLoad(object sender, EventArgs e)
     {
-        base.OnAfterRender(firstRender);
-        if (firstRender)
+        if (!this.Page.IsPostBack)
         {
             HtmlButton myButton = new HtmlButton();
             myButton.InnerText = "Button 1";
@@ -23,7 +22,6 @@
             myButton = new HtmlButton();
             myButton.InnerText = "Button 4";
             placeHolder.Controls.Add(myButton);
-            this.StateHasChanged();
         }
     }
 }
