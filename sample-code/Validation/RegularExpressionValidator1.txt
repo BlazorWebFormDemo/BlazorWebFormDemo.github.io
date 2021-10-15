@@ -41,7 +41,7 @@
 
     protected void ValidateBtn_Click(object sender, EventArgs e)
     {
-        if ((this.Page as IValidatePage).IsValid)
+        if (this.Page.IsValid)
         {
             output.Text = "Page is Valid.";
         }

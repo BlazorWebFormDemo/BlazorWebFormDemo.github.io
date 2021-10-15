@@ -30,7 +30,7 @@
     protected void ValidateBtn_OnClick(object sender, EventArgs e)
     {
         // Display whether the page passed validation.
-        if ((this.Page as IValidatePage).IsValid)
+        if (this.Page.IsValid)
         {
             message.Text = "Page is valid.";
         }

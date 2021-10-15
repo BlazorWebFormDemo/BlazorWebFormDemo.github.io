@@ -30,7 +30,7 @@
 
     protected void ButtonClick(object sender, EventArgs e)
     {
-        if ((this.Page as IValidatePage).IsValid)
+        if (this.Page.IsValid)
         {
             label1.Text = "Page is valid.";
         }
