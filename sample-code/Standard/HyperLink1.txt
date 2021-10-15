@@ -5,7 +5,7 @@
                ImageUrl="img/logo.png" />
 
 <asp.HyperLink Target="_new" NavigateUrl="/fetchdata-gridview"
-               Text="Blazor.WebForm Demo Site" />
+               Text="Blazor.WebForm.Components Demo Site" />
 
 @code {
 
