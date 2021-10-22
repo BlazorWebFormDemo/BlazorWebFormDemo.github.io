@@ -1,0 +1,317 @@
+[
+  {
+    "Name": "AccessKey",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "AllowTitleSelecting",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BackColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderStyle",
+    "Type": "BorderStyle",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderWidth",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Caption",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CaptionAlign",
+    "Type": "TableCaptionAlign",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CellPadding",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CellSpacing",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DayNameFormat",
+    "Type": "DayNameFormat",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Enabled",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FirstDayOfWeek",
+    "Type": "FirstDayOfWeek",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontBold",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontItalic",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontNames",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontOverline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontSize",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontStrikeout",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontUnderline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ForeColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Height",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextMonthText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextPrevFormat",
+    "Type": "NextPrevFormat",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PrevMonthText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectedDate",
+    "Type": "DateTime",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectionMode",
+    "Type": "CalendarSelectionMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectMonthText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectWeekText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowDayHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowGridLines",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowNextPrevMonth",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowTitle",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Style",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "TabIndex",
+    "Type": "Int16",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "TitleFormat",
+    "Type": "TitleFormat",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ToolTip",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "UseAccessibleHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "VisibleDate",
+    "Type": "DateTime",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Width",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDayRender",
+    "Type": "DayRenderEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSelectionChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnVisibleMonthChanged",
+    "Type": "MonthChangedEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "DayHeaderStyle",
+    "Type": "DayHeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "DayStyle",
+    "Type": "DayStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "NextPrevStyle",
+    "Type": "NextPrevStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "OtherMonthDayStyle",
+    "Type": "OtherMonthDayStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SelectedDayStyle",
+    "Type": "SelectedDayStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SelectorStyle",
+    "Type": "SelectorStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "TitleStyle",
+    "Type": "TitleStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "TodayDayStyle",
+    "Type": "TodayDayStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "WeekendDayStyle",
+    "Type": "WeekendDayStyle",
+    "Kind": "InnerProperty"
+  }
+]

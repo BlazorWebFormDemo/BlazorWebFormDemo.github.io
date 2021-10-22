@@ -1,0 +1,137 @@
+[
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "AutoSort",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataMember",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataSourceID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PaginationControlID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ReadOnly",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SortExpression",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "UseCollection",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBound",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataSourceChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteDeleted",
+    "Type": "OnExecuteDeleted",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteDeletedAsync",
+    "Type": "OnExecuteDeletedAsync",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteInserted",
+    "Type": "OnExecuteInserted",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteInsertedAsync",
+    "Type": "OnExecuteInsertedAsync",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteSelected",
+    "Type": "OnExecuteSelected",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteSorted",
+    "Type": "OnExecuteSorted",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteUpdated",
+    "Type": "OnExecuteUpdated",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnExecuteUpdatedAsync",
+    "Type": "OnExecuteUpdatedAsync",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  }
+]

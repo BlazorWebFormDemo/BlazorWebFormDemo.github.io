@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "NextPreviousPagerField",
+    "Type": "NextPreviousPagerField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "NumericPagerField",
+    "Type": "NumericPagerField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "TemplatePagerField",
+    "Type": "TemplatePagerField",
+    "Kind": "InnerProperty"
+  }
+]

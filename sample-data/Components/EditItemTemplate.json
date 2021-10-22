@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "SubstituteItem",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "TItem",
+    "Type": "Type",
+    "Kind": "Parameter"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  }
+]

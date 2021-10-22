@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "AccessKey",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "AlternateText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Bottom",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HotSpotMode",
+    "Type": "HotSpotMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Left",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NavigateUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PostBackValue",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Right",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "TabIndex",
+    "Type": "Int16",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Target",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Top",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  }
+]

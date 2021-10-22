@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "TemplatedWizardStep",
+    "Type": "asp.TemplatedWizardStep",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "WizardStep",
+    "Type": "asp.WizardStep",
+    "Kind": "InnerProperty"
+  }
+]

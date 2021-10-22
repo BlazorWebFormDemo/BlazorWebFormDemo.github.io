@@ -1,0 +1,77 @@
+[
+  {
+    "Name": "BackColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderStyle",
+    "Type": "BorderStyle",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderWidth",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontBold",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontItalic",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontNames",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontOverline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontSize",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontStrikeout",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontUnderline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ForeColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Height",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Width",
+    "Type": "String",
+    "Kind": "Parameter"
+  }
+]

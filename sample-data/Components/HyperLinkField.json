@@ -1,0 +1,97 @@
+[
+  {
+    "Name": "AccessibleHeaderText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataNavigateUrlFields",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataNavigateUrlFormatString",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataTextField",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataTextFormatString",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FooterText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HeaderImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HeaderText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertVisible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NavigateUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SortExpression",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Target",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Text",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ControlStyle",
+    "Type": "ControlStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "FooterStyle",
+    "Type": "FooterStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HeaderStyle",
+    "Type": "HeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemStyle",
+    "Type": "ItemStyle",
+    "Kind": "InnerProperty"
+  }
+]

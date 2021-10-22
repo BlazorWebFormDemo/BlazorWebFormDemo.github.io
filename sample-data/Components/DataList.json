@@ -1,0 +1,357 @@
+[
+  {
+    "Name": "AccessKey",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BackColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderStyle",
+    "Type": "BorderStyle",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderWidth",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Caption",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CaptionAlign",
+    "Type": "TableCaptionAlign",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CellPadding",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CellSpacing",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ChildLevel",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataKeyField",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataMember",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataSourceID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "EditItemIndex",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Enabled",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ExtractTemplateRows",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontBold",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontItalic",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontNames",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontOverline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontSize",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontStrikeout",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontUnderline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ForeColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "GridLines",
+    "Type": "GridLines",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Height",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HorizontalAlign",
+    "Type": "HorizontalAlign",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "RepeatColumns",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "RepeatDirection",
+    "Type": "RepeatDirection",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "RepeatLayout",
+    "Type": "RepeatLayout",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectedIndex",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowFooter",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Style",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "TabIndex",
+    "Type": "Int16",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ToolTip",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "UseAccessibleHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Width",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnCancelCommand",
+    "Type": "DataListCommandEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDeleteCommand",
+    "Type": "DataListCommandEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnEditCommand",
+    "Type": "DataListCommandEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCommand",
+    "Type": "DataListCommandEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCreated",
+    "Type": "DataListItemEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemDataBound",
+    "Type": "DataListItemEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSelectedIndexChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUpdateCommand",
+    "Type": "DataListCommandEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "AlternatingItemStyle",
+    "Type": "AlternatingItemStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "AlternatingItemTemplate",
+    "Type": "AlternatingItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "EditItemStyle",
+    "Type": "EditItemStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "EditItemTemplate",
+    "Type": "EditItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "FooterStyle",
+    "Type": "FooterStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "FooterTemplate",
+    "Type": "FooterTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HeaderStyle",
+    "Type": "HeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HeaderTemplate",
+    "Type": "HeaderTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemStyle",
+    "Type": "ItemStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemTemplate",
+    "Type": "ItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SelectedItemStyle",
+    "Type": "SelectedItemStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SelectedItemTemplate",
+    "Type": "SelectedItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SeparatorStyle",
+    "Type": "SeparatorStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SeparatorTemplate",
+    "Type": "SeparatorTemplate",
+    "Kind": "InnerProperty"
+  }
+]

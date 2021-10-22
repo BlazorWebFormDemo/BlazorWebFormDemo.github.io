@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "ButtonCount",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ButtonType",
+    "Type": "ButtonType",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CurrentPageLabelCssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextPageImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextPageText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextPreviousButtonCssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NumericButtonCssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PreviousPageImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PreviousPageText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "RenderNonBreakingSpacesBetweenControls",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "String",
+    "Kind": "Parameter"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "BoundField",
+    "Type": "asp.BoundField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ButtonField",
+    "Type": "asp.ButtonField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "CheckBoxField",
+    "Type": "asp.CheckBoxField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "CommandField",
+    "Type": "asp.CommandField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HyperLinkField",
+    "Type": "asp.HyperLinkField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ImageField",
+    "Type": "asp.ImageField",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "TemplateField",
+    "Type": "asp.TemplateField",
+    "Kind": "InnerProperty"
+  }
+]

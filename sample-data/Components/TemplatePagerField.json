@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Visible",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnPagerCommand",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "PagerTemplate",
+    "Type": "PagerTemplate",
+    "Kind": "InnerProperty"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "Name": "FirstPageImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FirstPageText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "LastPageImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "LastPageText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Mode",
+    "Type": "PagerButtons",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextPageImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NextPageText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PageButtonCount",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Position",
+    "Type": "PagerPosition",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PreviousPageImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "PreviousPageText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  }
+]

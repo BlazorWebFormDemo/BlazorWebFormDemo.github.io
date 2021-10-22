@@ -1,0 +1,292 @@
+[
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ChildLevel",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDRowSuffix",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ConvertEmptyStringToNull",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataKeyNames",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataMember",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataSourceID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "EditIndex",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Enabled",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "EnableModelValidation",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "EnablePersistedSelection",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "GroupItemCount",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "GroupPlaceholderID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertItemPosition",
+    "Type": "InsertItemPosition",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ItemPlaceholderID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectedIndex",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Style",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnCallingDataMethods",
+    "Type": "CallingDataMethodsEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnCreatingModelDataSource",
+    "Type": "CreatingModelDataSourceEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBound",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCanceling",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCommand",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCreated",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemDataBound",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemDeleted",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemDeleting",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemEditing",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemInserted",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemInserting",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemUpdated",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemUpdating",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLayoutCreated",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPagePropertiesChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPagePropertiesChanging",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSelectedIndexChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSelectedIndexChanging",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSorted",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSorting",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "AlternatingItemTemplate",
+    "Type": "AlternatingItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "EditItemTemplate",
+    "Type": "EditItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "EmptyDataTemplate",
+    "Type": "EmptyDataTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "EmptyItemTemplate",
+    "Type": "EmptyItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "GroupSeparatorTemplate",
+    "Type": "GroupSeparatorTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "GroupTemplate",
+    "Type": "GroupTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "InsertItemTemplate",
+    "Type": "InsertItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemSeparatorTemplate",
+    "Type": "ItemSeparatorTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemTemplate",
+    "Type": "ItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "LayoutTemplate",
+    "Type": "LayoutTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SelectedItemTemplate",
+    "Type": "SelectedItemTemplate",
+    "Kind": "InnerProperty"
+  }
+]

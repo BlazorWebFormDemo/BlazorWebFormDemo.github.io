@@ -1,0 +1,87 @@
+[
+  {
+    "Name": "AllowReturn",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "StepType",
+    "Type": "WizardStepType",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Title",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnActivate",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDeactivate",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "ContentTemplate",
+    "Type": "ContentTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "CustomNavigationTemplate",
+    "Type": "CustomNavigationTemplate",
+    "Kind": "InnerProperty"
+  }
+]

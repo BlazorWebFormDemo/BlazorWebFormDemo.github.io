@@ -1,0 +1,117 @@
+[
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ChildLevel",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataMember",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataSourceID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnCallingDataMethods",
+    "Type": "CallingDataMethodsEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnCreatingModelDataSource",
+    "Type": "CreatingModelDataSourceEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCommand",
+    "Type": "RepeaterCommandEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemCreated",
+    "Type": "RepeaterItemEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnItemDataBound",
+    "Type": "RepeaterItemEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "AlternatingItemTemplate",
+    "Type": "AlternatingItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "FooterTemplate",
+    "Type": "FooterTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HeaderTemplate",
+    "Type": "HeaderTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemTemplate",
+    "Type": "ItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "SeparatorTemplate",
+    "Type": "SeparatorTemplate",
+    "Kind": "InnerProperty"
+  }
+]

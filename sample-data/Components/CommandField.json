@@ -1,0 +1,172 @@
+[
+  {
+    "Name": "AccessibleHeaderText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ButtonType",
+    "Type": "ButtonType",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CancelImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CancelText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CausesValidation",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DeleteImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DeleteText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "EditImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "EditText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FooterText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HeaderImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HeaderText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertVisible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NewImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NewText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowCancelButton",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowDeleteButton",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowEditButton",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowInsertButton",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowSelectButton",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SortExpression",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "UpdateImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "UpdateText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ValidationGroup",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ControlStyle",
+    "Type": "ControlStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "FooterStyle",
+    "Type": "FooterStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HeaderStyle",
+    "Type": "HeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemStyle",
+    "Type": "ItemStyle",
+    "Kind": "InnerProperty"
+  }
+]

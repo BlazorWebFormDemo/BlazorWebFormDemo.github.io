@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Enabled",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Selected",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Text",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Value",
+    "Type": "String",
+    "Kind": "Parameter"
+  }
+]

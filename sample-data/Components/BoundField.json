@@ -1,0 +1,107 @@
+[
+  {
+    "Name": "AccessibleHeaderText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ApplyFormatInEditMode",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ConvertEmptyStringToNull",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataField",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataFormatString",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FooterText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HeaderImageUrl",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HeaderText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HtmlEncode",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "HtmlEncodeFormatString",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertVisible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "NullDisplayText",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ReadOnly",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ShowHeader",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SortExpression",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ValidateRequestMode",
+    "Type": "ValidateRequestMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ControlStyle",
+    "Type": "ControlStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "FooterStyle",
+    "Type": "FooterStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "HeaderStyle",
+    "Type": "HeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "ItemStyle",
+    "Type": "ItemStyle",
+    "Kind": "InnerProperty"
+  }
+]
