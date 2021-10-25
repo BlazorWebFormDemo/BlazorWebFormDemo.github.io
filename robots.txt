@@ -1,1 +1,3 @@
-﻿Sitemap: https://blazorwebformdemo.github.io/sitemap/sitemap.xml
+﻿User-agent: *
+Allow: /
+Sitemap: https://blazorwebformdemo.github.io/sitemap/sitemap.xml
