@@ -1,17 +1,17 @@
 [
   {
     "Name": "NextPreviousPagerField",
-    "Type": "NextPreviousPagerField",
+    "Type": "asp.NextPreviousPagerField",
     "Kind": "InnerProperty"
   },
   {
     "Name": "NumericPagerField",
-    "Type": "NumericPagerField",
+    "Type": "asp.NumericPagerField",
     "Kind": "InnerProperty"
   },
   {
     "Name": "TemplatePagerField",
-    "Type": "TemplatePagerField",
+    "Type": "asp.TemplatePagerField",
     "Kind": "InnerProperty"
   }
 ]
