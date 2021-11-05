@@ -1,0 +1,27 @@
+﻿@inherits ControlComponent
+
+<asp.ComboBox @ref="this.comboBox">
+    <asp.ListItem>Chocolate</asp.ListItem>
+    <asp.ListItem>Coconut</asp.ListItem>
+    <asp.ListItem>Mint</asp.ListItem>
+    <asp.ListItem>Strawberry</asp.ListItem>
+    <asp.ListItem>Vanilla</asp.ListItem>
+</asp.ComboBox>
+
+<br />
+<br />
+
+<asp.Button Text="Submit"
+            OnClick="this.SubmitBtn_Click" />
+
+<asp.Label @ref="this.label" />
+
+@code {
+    private ComboBox comboBox;
+    private Label label;
+
+    protected void SubmitBtn_Click(object sender, EventArgs e)
+    {
+        label.Text = "You chose: " + comboBox.Text;
+    }
+}

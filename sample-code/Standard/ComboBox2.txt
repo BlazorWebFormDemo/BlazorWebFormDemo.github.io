@@ -1,0 +1,37 @@
+﻿@using System.Collections
+@inherits ControlComponent
+
+<asp.ComboBox @ref="this.comboBox"
+              DataSourceID="FreeDataSource1">
+</asp.ComboBox>
+
+<asp.FreeDataSource ID="FreeDataSource1" OnExecuteSelected="sender => this.CreateDataSource()" />
+
+<br />
+<br />
+
+<asp.Button Text="Submit"
+            OnClick="this.SubmitBtn_Click" />
+
+<asp.Label @ref="this.label" />
+
+@code {
+    private ComboBox comboBox;
+    private Label label;
+
+    protected ICollection CreateDataSource()
+    {
+        ArrayList values = new ArrayList();
+        values.Add("Chocolate");
+        values.Add("Coconut");
+        values.Add("Mint");
+        values.Add("Strawberry");
+        values.Add("Vanilla");
+        return values;
+    }
+
+    protected void SubmitBtn_Click(object sender, EventArgs e)
+    {
+        label.Text = "You chose: " + comboBox.Text;
+    }
+}

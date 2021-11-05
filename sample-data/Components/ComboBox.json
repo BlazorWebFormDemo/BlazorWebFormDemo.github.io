@@ -1,0 +1,252 @@
+[
+  {
+    "Name": "AccessKey",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "AppendDataBoundItems",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "AutoPostBack",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BackColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderStyle",
+    "Type": "BorderStyle",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "BorderWidth",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CausesValidation",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ClientIDMode",
+    "Type": "ClientIDMode",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Columns",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "CssClass",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataMember",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataSourceID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataTextField",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataTextFormatString",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataValueField",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Enabled",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontBold",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontItalic",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontNames",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontOverline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontSize",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontStrikeout",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "FontUnderline",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ForeColor",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Height",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ID",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "MaxLength",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ReadOnly",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "SelectedValue",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Style",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "TabIndex",
+    "Type": "Int16",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Text",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ToolTip",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ValidationGroup",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Visible",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "Width",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OnCallingDataMethods",
+    "Type": "CallingDataMethodsEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnCreatingModelDataSource",
+    "Type": "CreatingModelDataSourceEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBinding",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDataBound",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnDisposed",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnInit",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnLoad",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnPreRender",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnSelectedIndexChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnTextChanged",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnUnload",
+    "Type": "EventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "ListItem",
+    "Type": "asp.ListItem",
+    "Kind": "InnerProperty"
+  }
+]

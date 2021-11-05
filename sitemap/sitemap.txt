@@ -14,6 +14,7 @@ https://blazorwebformdemo.github.io/Standard/Button/
 https://blazorwebformdemo.github.io/Standard/Calendar/
 https://blazorwebformdemo.github.io/Standard/CheckBox/
 https://blazorwebformdemo.github.io/Standard/CheckBoxList/
+https://blazorwebformdemo.github.io/Standard/ComboBox/
 https://blazorwebformdemo.github.io/Standard/DropDownList/
 https://blazorwebformdemo.github.io/Standard/FileUpload/
 https://blazorwebformdemo.github.io/Standard/HiddenField/
