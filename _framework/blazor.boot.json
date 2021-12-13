@@ -8,9 +8,9 @@
   "resources": {
     "assembly": {
       "Applied.dll": "sha256-BBpT8yuci4u0ttoTslZRFSuKkrXz1JowG\/EwFccHZWU=",
-      "Blazor.WebForm.Components.dll": "sha256-q7vNb2Jodn6dKpn7lD7ggINesFN\/3OCGy5tSGS47+Ac=",
-      "Blazor.WebForm.UI.dll": "sha256-iQ0q8cmjAKW2y7pTNVJrdhRn2kok1G5HggVL9mao1EM=",
-      "BlazorWebFormDemo.dll": "sha256-uXOMtmQ9hUlJnN9vD23ggLwLb6d9DTjxkhip4JBscVk=",
+      "Blazor.WebForm.Components.dll": "sha256-6Ypri3yftp30UcBRd3gt7z1O9eGhrokaNIGv6p+XBmk=",
+      "Blazor.WebForm.UI.dll": "sha256-d6F4fMhZCgNrZxg\/hJHVLIROUsjnirkopj4y6GPiXgQ=",
+      "BlazorWebFormDemo.dll": "sha256-\/+NP2lGRhy9FBnKHXqawooGzRMtKkjstAUwXPC4n0mQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-hLAOEbJsnwEYSR817Mf3mZlRgBrlYDMyKbwx2QdrLDo=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-W4op9qWCV64C5h2GzwkO+yP1W3dzVktAuHEU+xbxCTs=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-gwJGRgsRphaJ\/ixhygn0+CMejxXvnsQmd1RDbbeSdbw=",
