@@ -16,11 +16,11 @@
             <asp.DropDownList @ref="this.colorList"
                               AutoPostBack="true"
                               OnSelectedIndexChanged="this.Selection_Change">
-                <asp.ListItem Selected="true" Value="White"> White </asp.ListItem>
-                <asp.ListItem Value="Silver"> Silver </asp.ListItem>
-                <asp.ListItem Value="DarkGray"> Dark Gray </asp.ListItem>
-                <asp.ListItem Value="Khaki"> Khaki </asp.ListItem>
-                <asp.ListItem Value="DarkKhaki"> Dark Khaki </asp.ListItem>
+                <asp.ListItem Selected="true" Value="White">White</asp.ListItem>
+                <asp.ListItem Value="Silver">Silver</asp.ListItem>
+                <asp.ListItem Value="DarkGray">Dark Gray</asp.ListItem>
+                <asp.ListItem Value="Khaki">Khaki</asp.ListItem>
+                <asp.ListItem Value="DarkKhaki">Dark Khaki</asp.ListItem>
             </asp.DropDownList>
         </td>
     </tr>
