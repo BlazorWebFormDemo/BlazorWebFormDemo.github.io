@@ -55,6 +55,16 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "RenderNonBreakingSpacesBetweenControls",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "RepeatLayout",
+    "Type": "RepeatLayout",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "Visible",
     "Type": "Boolean",
     "Kind": "Parameter"
