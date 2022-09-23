@@ -25,13 +25,25 @@ function WebForm_FindFirstFocusableChild(control) {
     }
     return null;
 }
-function WebForm_AutoFocus(focusId) {
-    var targetControl;
+function WebForm_FindTargetById(focusId) {
     if (__nonMSDOMBrowser) {
-        targetControl = document.getElementById(focusId);
+        return document.getElementById(focusId);
     }
     else {
-        targetControl = document.all[focusId];
+        return document.all[focusId];
+    }
+}
+function WebForm_FindTargetByName(focusName) {
+    var elements = document.getElementsByName(focusName);
+    return elements.length > 0 ? elements[0] : null;
+}
+function WebForm_AutoFocus(focusId, useName) {
+    var targetControl;
+    if (useName && __nonMSDOMBrowser) {
+        targetControl = WebForm_FindTargetByName(focusId);
+    }
+    else {
+        targetControl = WebForm_FindTargetById(focusId);
     }
     var focused = targetControl;
     if (targetControl && (!WebForm_CanFocus(targetControl)) ) {
@@ -56,7 +68,7 @@ function WebForm_CanFocus(element) {
     var tagName = element.tagName.toLowerCase();
     return (!(element.disabled) &&
             (!(element.type) || element.type.toLowerCase() != "hidden") &&
-            WebForm_IsFocusableTag(tagName) &&
+            (WebForm_IsFocusableTag(tagName) || element.hasAttribute("contenteditable")) &&
             WebForm_IsInVisibleContainer(element)
             );
 }
