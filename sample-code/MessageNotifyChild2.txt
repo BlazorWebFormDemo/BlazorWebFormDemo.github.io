@@ -1,0 +1,12 @@
+﻿@inherits ControlComponent
+<asp.Label @ref="this.label"></asp.Label>
+@code {
+    private Label label;
+
+    [MessageNotifyMethod]
+    public void SetText(string value)
+    {
+        label.Text = value;
+        this.StateHasChanged();
+    }
+}

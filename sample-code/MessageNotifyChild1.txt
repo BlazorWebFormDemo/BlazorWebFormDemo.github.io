@@ -1,0 +1,14 @@
+﻿@inherits ControlComponent
+<p>Please enter a value and click the submit button.</p>
+<asp.TextBox @ref="this.textBox"></asp.TextBox>
+<br />
+<br />
+<asp.Button OnClick="this.SubmitBtn_Click">Submit</asp.Button>
+@code {
+    private TextBox textBox;
+
+    protected void SubmitBtn_Click(object sender, EventArgs e)
+    {
+        this.SendMessage(nameof(MessageNotifyChild2.SetText), textBox.Text);
+    }
+}

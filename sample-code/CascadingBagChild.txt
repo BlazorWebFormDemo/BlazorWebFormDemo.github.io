@@ -1,0 +1,6 @@
+﻿@inherits ControlComponent
+<asp.Label @bind-Text="this.Text"></asp.Label>
+@code {
+    [CascadingParameter(Name = "Text")]
+    public string Text { get; set; }
+}

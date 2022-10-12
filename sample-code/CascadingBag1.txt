@@ -1,0 +1,19 @@
+﻿@inherits ControlComponent
+<p>Please enter a value.</p>
+<asp.TextBox @bind-Text="this.Text"></asp.TextBox>
+<br />
+<br />
+<CascadingBagChild />
+@code {
+    public string Text
+    {
+        get
+        {
+            return this.CascadingBag.Text;
+        }
+        set
+        {
+            this.CascadingBag.Text = value;
+        }
+    }
+}

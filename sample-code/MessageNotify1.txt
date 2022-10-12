@@ -1,0 +1,5 @@
+﻿@inherits ControlComponent
+<MessageNotifyChild1 />
+<br />
+<br />
+<MessageNotifyChild2 />
