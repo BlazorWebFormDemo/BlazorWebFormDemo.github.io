@@ -18,7 +18,7 @@
         if (fileUpload.HasFile)
         {
             // Save the file to client ObjectURL.
-            string mediaType = $"image/{System.IO.Path.GetExtension(fileUpload.FileName).Substring(1)}";
+            string mediaType = fileUpload.PostedFile.ContentType;
             string imageUrl = await fileUpload.SaveAsUrlAsync(mediaType);
             // Show image.
             image.ImageUrl = imageUrl;

@@ -610,7 +610,7 @@
                                             <span class="hljs-keyword">if</span> (fileUpload.HasFile)
         {
                                             <span class="hljs-comment">// Save the file to client ObjectURL.</span>
-                                            <span class="hljs-built_in">string</span> mediaType = <span class="hljs-string">$"image/<span class="hljs-subst">{System.IO.Path.GetExtension(fileUpload.FileName).Substring(<span class="hljs-number">1</span>)}</span>"</span>;
+                                            <span class="hljs-built_in">string</span> mediaType = fileUpload.PostedFile.ContentType;
                                             <span class="hljs-built_in">string</span> imageUrl = <span class="hljs-keyword">await</span> fileUpload.SaveAsUrlAsync(mediaType);
                                             <span class="hljs-comment">// Show image.</span>
             image.ImageUrl = imageUrl;
