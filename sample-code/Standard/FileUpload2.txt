@@ -13,17 +13,18 @@
     private FileUpload fileUpload;
     private Image image;
 
-    protected async void FileUpload_PostedFileChanged(object sender, EventArgs e)
+    protected void FileUpload_PostedFileChanged(object sender, EventArgs e)
     {
-        if (fileUpload.HasFile)
+        this.InvokeWaitTask(async () =>
         {
-            // Save the file to client ObjectURL.
-            string imageUrl = await fileUpload.SaveAsUrlAsync();
-            // Show image.
-            image.ImageUrl = imageUrl;
-            image.Visible = true;
-
-            this.StateHasChanged();
-        }
+            if (fileUpload.HasFile)
+            {
+                // Save the file to client ObjectURL.
+                string imageUrl = await fileUpload.SaveAsUrlAsync();
+                // Show image.
+                image.ImageUrl = imageUrl;
+                image.Visible = true;
+            }
+        });
     }
 }

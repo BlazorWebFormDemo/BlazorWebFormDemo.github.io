@@ -605,18 +605,19 @@
                                             <span class="hljs-keyword">private</span> FileUpload fileUpload;
                                             <span class="hljs-keyword">private</span> Image image;
 
-                                            <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">void</span> <span class="hljs-title">FileUpload_PostedFileChanged</span>(<span class="hljs-params"><span class="hljs-built_in">object</span> sender, EventArgs e</span>)</span>
+                                            <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">FileUpload_PostedFileChanged</span>(<span class="hljs-params"><span class="hljs-built_in">object</span> sender, EventArgs e</span>)</span>
     {
-                                            <span class="hljs-keyword">if</span> (fileUpload.HasFile)
+                                            <span class="hljs-keyword">this</span>.InvokeWaitTask(<span class="hljs-keyword">async</span> () =&gt;
         {
+                                            <span class="hljs-keyword">if</span> (fileUpload.HasFile)
+            {
                                             <span class="hljs-comment">// Save the file to client ObjectURL.</span>
                                             <span class="hljs-built_in">string</span> imageUrl = <span class="hljs-keyword">await</span> fileUpload.SaveAsUrlAsync();
                                             <span class="hljs-comment">// Show image.</span>
-            image.ImageUrl = imageUrl;
-            image.Visible = <span class="hljs-literal">true</span>;
-
-                                            <span class="hljs-keyword">this</span>.StateHasChanged();
-        }
+                image.ImageUrl = imageUrl;
+                image.Visible = <span class="hljs-literal">true</span>;
+            }
+        });
     }
 </span><span class="hljs-built_in">}</span>
 </code></pre>
