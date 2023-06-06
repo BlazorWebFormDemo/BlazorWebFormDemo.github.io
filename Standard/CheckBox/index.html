@@ -630,6 +630,52 @@
                                     </div>
                                 </div>
                             </div>
+                            <h5>CheckBox Toggle Switch Example</h5>
+                            <div class="card card-primary card-tabs">
+                                <div class="card-header p-0 pt-1"><ul class="nav nav-tabs" id="tabs-two-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="tabs-two-example-tab" data-toggle="pill" href="#tabs-two-example" role="tab" aria-controls="tabs-two-example" aria-selected="true">Example</a></li><li class="nav-item"><a class="nav-link" id="tabs-two-razor-tab" data-toggle="pill" href="#tabs-two-razor" role="tab" aria-controls="tabs-two-razor" aria-selected="false">Razor</a></li></ul></div>
+                                <div class="card-body">
+                                    <div class="tab-content" id="tabs-two-tabcontent">
+                                        <div class="tab-pane fade show active" id="tabs-two-example" role="tabpanel" aria-labelledby="tabs-two-example-tab">
+                                            <span class="custom-control custom-switch"><input id="Switch1" type="checkbox" name="447d14ef17e14d129187802ad4628f8e" onclick="javascript:setTimeout('__doPostBack(\'46d961812c9e442c972c250c7958a50a\', \'\');', 0)" class="custom-control-input"><label for="Switch1" class="custom-control-label">Toggle this custom switch element</label></span>
+                                            <br>
+                                            <span></span>
+                                        </div>
+                                        <div class="tab-pane fade" id="tabs-two-razor" role="tabpanel" aria-labelledby="tabs-two-razor-tab">
+                                            <pre><code class="hljs cshtml language-cshtml-razor"><span class="hljs-built_in">@inherits</span><span class="hljs-type"> ControlComponent</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">asp.CheckBox</span> <span class="hljs-attr">ID</span>=<span class="hljs-string">"Switch1"</span> <span class="hljs-attr">_ref</span>=<span class="hljs-string">"() =&gt; this.toggleCheckBox"</span>
+                                            <span class="hljs-attr">AutoPostBack</span>=<span class="hljs-string">"true"</span>
+                                            <span class="hljs-attr">OnCheckedChanged</span>=<span class="hljs-string">"this.CheckBox_CheckedChanged"</span>&gt;</span>Toggle this custom switch element<span class="hljs-tag">&lt;/<span class="hljs-name">asp.CheckBox</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">asp.Label</span> @<span class="hljs-attr">ref</span>=<span class="hljs-string">"this.message"</span> /&gt;</span>
+
+<span class="hljs-built_in">@code {</span><span class="language-csharp">
+                                            <span class="hljs-keyword">private</span> ToggleCheckBox toggleCheckBox = <span class="hljs-keyword">new</span> ToggleCheckBox();
+                                            <span class="hljs-keyword">private</span> Label message;
+
+                                            <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">CheckBox_CheckedChanged</span>(<span class="hljs-params"><span class="hljs-built_in">object</span> sender, EventArgs e</span>)</span>
+    {
+        message.Text = <span class="hljs-string">$"checked is <span class="hljs-subst">{toggleCheckBox.Checked}</span>"</span>;
+    }
+
+                                            <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ToggleCheckBox</span> : <span class="hljs-title">CheckBox</span>
+    {
+                                            <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnInit</span>(<span class="hljs-params">EventArgs e</span>)</span>
+        {
+                                            <span class="hljs-keyword">this</span>.LabelMode = LabelMode.For;
+                                            <span class="hljs-comment">//bootstrap toggle switch css.</span>
+                                            <span class="hljs-keyword">this</span>.CssClass = <span class="hljs-string">"custom-control custom-switch"</span>;
+                                            <span class="hljs-keyword">this</span>.InputAttributes[<span class="hljs-string">"class"</span>] = <span class="hljs-string">"custom-control-input"</span>;
+                                            <span class="hljs-keyword">this</span>.LabelAttributes[<span class="hljs-string">"class"</span>] = <span class="hljs-string">"custom-control-label"</span>;
+                                            <span class="hljs-keyword">base</span>.OnInit(e);
+        }
+    }
+</span><span class="hljs-built_in">}</span>
+</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <hr>
                             <h5>CheckBox Metadata</h5>
                             <div class="card">

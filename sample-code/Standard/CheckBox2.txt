@@ -1,0 +1,30 @@
+﻿@inherits ControlComponent
+
+<asp.CheckBox ID="Switch1" _ref="() => this.toggleCheckBox"
+              AutoPostBack="true"
+              OnCheckedChanged="this.CheckBox_CheckedChanged">Toggle this custom switch element</asp.CheckBox>
+<br />
+<asp.Label @ref="this.message" />
+
+@code {
+    private ToggleCheckBox toggleCheckBox = new ToggleCheckBox();
+    private Label message;
+
+    protected void CheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        message.Text = $"checked is {toggleCheckBox.Checked}";
+    }
+
+    public class ToggleCheckBox : CheckBox
+    {
+        protected override void OnInit(EventArgs e)
+        {
+            this.LabelMode = LabelMode.For;
+            //bootstrap toggle switch css.
+            this.CssClass = "custom-control custom-switch";
+            this.InputAttributes["class"] = "custom-control-input";
+            this.LabelAttributes["class"] = "custom-control-label";
+            base.OnInit(e);
+        }
+    }
+}
