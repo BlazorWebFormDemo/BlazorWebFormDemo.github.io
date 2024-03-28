@@ -215,6 +215,16 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "InsertRowPosition",
+    "Type": "InsertRowPosition",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "InsertRowAsFooterWhenEdit",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "PageIndex",
     "Type": "Int32",
     "Kind": "Parameter"
@@ -365,6 +375,16 @@
     "Kind": "Event"
   },
   {
+    "Name": "OnRowInserted",
+    "Type": "GridViewInsertedEventHandler",
+    "Kind": "Event"
+  },
+  {
+    "Name": "OnRowInserting",
+    "Type": "GridViewInsertEventHandler",
+    "Kind": "Event"
+  },
+  {
     "Name": "OnRowUpdated",
     "Type": "GridViewUpdatedEventHandler",
     "Kind": "Event"
@@ -432,6 +452,11 @@
   {
     "Name": "HeaderStyle",
     "Type": "HeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "InsertRowStyle",
+    "Type": "InsertRowStyle",
     "Kind": "InnerProperty"
   },
   {
