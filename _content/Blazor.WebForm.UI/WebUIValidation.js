@@ -285,6 +285,7 @@ function ValidatorOnLoad() {
             if (val.isvalid == "False") {
                 val.isvalid = false;
                 Page_IsValid = false;
+                ValidatorUpdateDisplay(val);
             }
             else {
                 val.isvalid = true;
