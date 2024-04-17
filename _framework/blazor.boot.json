@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorWebFormDemo",
   "resources": {
-    "hash": "sha256-nVyjoloYiLC/BbgbN2g8W0bqATcqEimTMHbb5pg2M9A=",
+    "hash": "sha256-HZmFRSkZh78Cvmsx1Jt+4X+/JHhfp25roTzix8etLnQ=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.de80s021io.js": "sha256-Dk7YmScsNvFupmAl6/NATvXnb54Cxy3eI/Rb1ijExOI="
     },
@@ -18,9 +18,9 @@
     },
     "assembly": {
       "Applied.wasm": "sha256-3D9gBNmpHlgOfkawrcVY2wnvKUaFXwyzgaoAqeafMIc=",
-      "Blazor.WebForm.Components.wasm": "sha256-fS+8ILntnZce9gTLY6OquYVnKdZ3ykxIIV3eDAeDCj4=",
-      "Blazor.WebForm.UI.wasm": "sha256-v4QpyCuEnxxYUoHP3B67D6a2PtWn0MuxfDRRzwCS6SU=",
-      "BlazorWebFormDemo.wasm": "sha256-QrgIKJGDeyX2T+cbu30yipSy7RwMpQsZY/vSjz10e24=",
+      "Blazor.WebForm.Components.wasm": "sha256-oV4jBR9bxVU/a4Lu9v4cP5PkplmzEfXlYvTrGCvhPEY=",
+      "Blazor.WebForm.UI.wasm": "sha256-mLOZ2gg5du1SEec8NMvhdrvNkVg84Ku8lCCx/mIn4FM=",
+      "BlazorWebFormDemo.wasm": "sha256-jov0tRYlXVfWxgFS3caH7VW2kXsihOj1+iKsDT9aMy4=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-rbG49WbpedLXPueCkNoAlH1lqvz1vELoRBBhGB0CLWA=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-LXXp3ykqKdqGc60MnWjIf5SwfjT0K1unbg0H8VhCOzM=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-EQk2PpZkK4C8uu/S/8413Hli7ARMPTMkxXg3+NsTj9U=",
