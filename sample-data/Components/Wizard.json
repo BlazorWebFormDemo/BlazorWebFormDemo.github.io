@@ -185,6 +185,11 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "SideBarPosition",
+    "Type": "WizardSideBarPosition",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "SkipLinkText",
     "Type": "String",
     "Kind": "Parameter"
