@@ -1,5 +1,10 @@
 [
   {
+    "Name": "Attributes",
+    "Type": "IReadOnlyDictionary",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "Enabled",
     "Type": "Boolean",
     "Kind": "Parameter"
