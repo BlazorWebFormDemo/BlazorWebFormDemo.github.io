@@ -11,6 +11,7 @@ https://blazorwebformdemo.github.io/DotNetEvents/
 https://blazorwebformdemo.github.io/fetchdata-gridview/
 https://blazorwebformdemo.github.io/LoadValidators/
 https://blazorwebformdemo.github.io/MessageNotify/
+https://blazorwebformdemo.github.io/ParameterPrefix/
 https://blazorwebformdemo.github.io/Standard/BulletedList/
 https://blazorwebformdemo.github.io/Standard/Button/
 https://blazorwebformdemo.github.io/Standard/Calendar/

@@ -1,0 +1,9 @@
+﻿@inherits ControlComponent
+
+<asp.TextBox @bind-convert-Text="this.date" format-Text="yyyy-MM-dd HH:mm:ss"></asp.TextBox>
+
+@this.date.ToString()
+
+@code {
+    public DateTime date = DateTime.Now;
+}

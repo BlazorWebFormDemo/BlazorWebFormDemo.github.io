@@ -2,182 +2,186 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blazorwebformdemo.github.io/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/CascadingBag/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/DataList/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/DataPager/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/DetailsView/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/FormView/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/GridView/</loc>
-    <lastmod>2024-03-28</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/ListView/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Data/Repeater/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/DotNetEvents/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/fetchdata-gridview/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/MessageNotify/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://blazorwebformdemo.github.io/ParameterPrefix/</loc>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/LoadValidators/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/BulletedList/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Button/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Calendar/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/CheckBox/</loc>
-    <lastmod>2023-06-06</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/CheckBoxList/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/ComboBox/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/DropDownList/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/FileUpload/</loc>
-    <lastmod>2023-01-13</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/HiddenField/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/HyperLink/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Image/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/ImageButton/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/ImageMap/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Label/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/LinkButton/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/ListBox/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Literal/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Localize/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/MultiView/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Panel/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/PlaceHolder/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/RadioButton/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/RadioButtonList/</loc>
-    <lastmod>2024-07-20</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Table/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/TextBox/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Standard/Wizard/</loc>
-    <lastmod>2024-05-08</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Validation/CompareValidator/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Validation/CustomValidator/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Validation/RangeValidator/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Validation/RegularExpressionValidator/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Validation/RequiredFieldValidator/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
   <url>
     <loc>https://blazorwebformdemo.github.io/Validation/ValidationSummary/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2024-10-05</lastmod>
   </url>
 </urlset>
