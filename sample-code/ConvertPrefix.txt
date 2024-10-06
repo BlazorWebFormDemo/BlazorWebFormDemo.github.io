@@ -5,5 +5,5 @@
 @this.date.ToString()
 
 @code {
-    public DateTime date = DateTime.Now;
+    DateTime date = DateTime.Now;
 }
