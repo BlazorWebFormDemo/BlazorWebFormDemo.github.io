@@ -447,6 +447,34 @@ function WebForm_TextBoxKeyHandler(event) {
     }
     return true;
 }
+function WebForm_TextBoxDateKeyHandler(event) {
+    if (WebForm_TextBoxKeyHandler(event) == false) {
+        return false;
+    }
+    event.target.__textBoxKeypress = true;
+    return true;
+}
+function WebForm_TextBoxDatePointerHandler(event) {
+    event.target.__textBoxKeypress = false;
+    return true;
+}
+function WebForm_TextBoxDateBlurHandler(event) {
+    if (!event.target.__textBoxChange && !event.target.__textBoxKeypress) {
+        return false;
+    }
+    event.target.__textBoxChange = false;
+    event.target.__textBoxKeypress = false;
+    return true;
+}
+function WebForm_TextBoxDateChangeHandler(event) {
+    if (event) {
+        event.target.__textBoxChange = event.target.__textBoxKeypress;
+        if (event.target.__textBoxKeypress) {
+            return false;
+        }
+    }
+    return true;
+}
 function WebForm_TrimString(value) {
     return value.replace(/^\s+|\s+$/g, '')
 }
