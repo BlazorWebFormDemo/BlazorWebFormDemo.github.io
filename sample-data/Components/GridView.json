@@ -20,6 +20,11 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "AllowVirtualizing",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "Attributes",
     "Type": "IReadOnlyDictionary",
     "Kind": "Parameter"
@@ -215,13 +220,13 @@
     "Kind": "Parameter"
   },
   {
-    "Name": "InsertRowPosition",
-    "Type": "InsertRowPosition",
+    "Name": "InsertRowAsFooterWhenEdit",
+    "Type": "Boolean",
     "Kind": "Parameter"
   },
   {
-    "Name": "InsertRowAsFooterWhenEdit",
-    "Type": "Boolean",
+    "Name": "InsertRowPosition",
+    "Type": "InsertRowPosition",
     "Kind": "Parameter"
   },
   {
@@ -502,6 +507,11 @@
   {
     "Name": "SortedDescendingHeaderStyle",
     "Type": "SortedDescendingHeaderStyle",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "VirtualizerSettings",
+    "Type": "VirtualizerSettings",
     "Kind": "InnerProperty"
   }
 ]

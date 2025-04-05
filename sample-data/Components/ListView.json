@@ -1,5 +1,10 @@
 [
   {
+    "Name": "AllowVirtualizing",
+    "Type": "Boolean",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "Attributes",
     "Type": "IReadOnlyDictionary",
     "Kind": "Parameter"
@@ -287,6 +292,11 @@
   {
     "Name": "SelectedItemTemplate",
     "Type": "SelectedItemTemplate",
+    "Kind": "InnerProperty"
+  },
+  {
+    "Name": "VirtualizerSettings",
+    "Type": "VirtualizerSettings",
     "Kind": "InnerProperty"
   }
 ]

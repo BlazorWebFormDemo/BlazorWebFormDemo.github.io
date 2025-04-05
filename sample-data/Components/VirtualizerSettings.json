@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "SpacerElement",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "ItemSize",
+    "Type": "Single",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "OverscanCount",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "MaxItemCount",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  }
+]
