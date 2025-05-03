@@ -70,6 +70,16 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "DataGroupField",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
+    "Name": "DataGroupFormatString",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "DataTextField",
     "Type": "String",
     "Kind": "Parameter"

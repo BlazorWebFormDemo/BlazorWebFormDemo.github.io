@@ -10,6 +10,11 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "Group",
+    "Type": "String",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "Selected",
     "Type": "Boolean",
     "Kind": "Parameter"
