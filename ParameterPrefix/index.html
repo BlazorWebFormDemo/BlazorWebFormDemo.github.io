@@ -520,6 +520,19 @@
                                             <input name="f4968ff8770e4383926836bc09c6551d" type="text" value="2024-10-05 20:10:19" onchange="javascript:setTimeout('__doPostBack(\'1976c64f7fc94ff298ebcada7ea59068\', \'\');', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;">
 
                                             2024/10/5 下午8:10:19
+
+                                            <hr>
+
+                                            <select name="c261ca8cc08f4b69bf3ea80654d9f6f4" onchange="javascript:setTimeout('__doPostBack(\'9d9bfb2b684f474bb6faed84c6110f65\', \'\');', 0)">
+                                                <option value="Chocolate">Chocolate</option>
+                                                <option value="Coconut">Coconut</option>
+                                                <option value="Mint">Mint</option>
+                                                <option selected="selected" value="Strawberry">Strawberry</option>
+                                                <option value="Vanilla">Vanilla</option>
+
+                                            </select>
+
+                                            Strawberry
                                         </div>
                                         <div class="tab-pane fade" id="tabs-one-razor" role="tabpanel" aria-labelledby="tabs-one-razor-tab">
                                             <pre><code class="hljs cshtml language-cshtml-razor"><span class="hljs-built_in">@inherits</span><span class="hljs-type"> ControlComponent</span>
@@ -528,8 +541,30 @@
 
 <span class="hljs-built_in">@</span><span class="language-csharp"><span class="hljs-keyword">this</span>.date.ToString()</span>
 
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">asp.DropDownList</span> @<span class="hljs-attr">bind-convert-SelectedValue</span>=<span class="hljs-string">"this.enumValue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">asp.ListItem</span>&gt;</span>Chocolate<span class="hljs-tag">&lt;/<span class="hljs-name">asp.ListItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">asp.ListItem</span>&gt;</span>Coconut<span class="hljs-tag">&lt;/<span class="hljs-name">asp.ListItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">asp.ListItem</span>&gt;</span>Mint<span class="hljs-tag">&lt;/<span class="hljs-name">asp.ListItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">asp.ListItem</span>&gt;</span>Strawberry<span class="hljs-tag">&lt;/<span class="hljs-name">asp.ListItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">asp.ListItem</span>&gt;</span>Vanilla<span class="hljs-tag">&lt;/<span class="hljs-name">asp.ListItem</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">asp.DropDownList</span>&gt;</span>
+
+<span class="hljs-built_in">@</span><span class="language-csharp"><span class="hljs-keyword">this</span>.enumValue.ToString()</span>
+
 <span class="hljs-built_in">@code {</span><span class="language-csharp">
                                             DateTime date = DateTime.Now;
+                                            ExampleEnum enumValue = ExampleEnum.Strawberry;
+
+                                            <span class="hljs-built_in">enum</span> ExampleEnum
+    {
+        Chocolate,
+        Coconut,
+        Mint,
+        Strawberry,
+        Vanilla
+    }
 </span><span class="hljs-built_in">}</span>
 </code></pre>
                                         </div>
@@ -541,7 +576,7 @@
                 </div>
             </div>
             <footer class="main-footer">
-                <strong>Copyright © 2025 Jurio li</strong> All rights reserved.
+                <strong>Copyright © 2026 Jurio li</strong> All rights reserved.
             </footer>
             <aside class="control-sidebar control-sidebar-dark"></aside>
         </div>

@@ -4,6 +4,28 @@
 
 @this.date.ToString()
 
+<hr />
+
+<asp.DropDownList @bind-convert-SelectedValue="this.enumValue">
+    <asp.ListItem>Chocolate</asp.ListItem>
+    <asp.ListItem>Coconut</asp.ListItem>
+    <asp.ListItem>Mint</asp.ListItem>
+    <asp.ListItem>Strawberry</asp.ListItem>
+    <asp.ListItem>Vanilla</asp.ListItem>
+</asp.DropDownList>
+
+@this.enumValue.ToString()
+
 @code {
     DateTime date = DateTime.Now;
+    ExampleEnum enumValue = ExampleEnum.Strawberry;
+
+    enum ExampleEnum
+    {
+        Chocolate,
+        Coconut,
+        Mint,
+        Strawberry,
+        Vanilla
+    }
 }
