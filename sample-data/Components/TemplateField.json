@@ -5,6 +5,11 @@
     "Kind": "Parameter"
   },
   {
+    "Name": "AutoGenerateFieldIndex",
+    "Type": "Int32",
+    "Kind": "Parameter"
+  },
+  {
     "Name": "ConvertEmptyStringToNull",
     "Type": "Boolean",
     "Kind": "Parameter"
